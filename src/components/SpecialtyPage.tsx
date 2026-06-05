@@ -65,7 +65,7 @@ const SPECIALTIES_COPIES: Record<Exclude<PageId, 'home'>, CustomSpecialtyData> =
     ],
     notForWhomDescription: "Esta seção é de orientação exclusiva ao trabalhador. Não se destina à elaboração de defesas patronais de grandes corporações ou ao planejamento de empresas. Cada dúvida exposta passa por estudo pormenorizado do histórico de trabalho individual.",
     howWeHelpTitle: "Como a Dra. Fernanda Avancini pode ajudar no seu caso",
-    howWeHelpSubtitle: "A atuação no âmbito trabalhista é realizada de forma artesanal, focando nos elementos de comprovação reais e assegurando um tratamento transparente.",
+    howWeHelpSubtitle: "A atuação no âmbito trabalhista é realizada de maneira atenta e personalizada, focando em analisar os documentos reais e assegurar um acompanhamento transparente.",
     howWeHelp: [
       {
         title: "Análise do caso",
@@ -100,8 +100,8 @@ const SPECIALTIES_COPIES: Record<Exclude<PageId, 'home'>, CustomSpecialtyData> =
         desc: "Após a leitura do relato inicial, informamos quais são as providências iniciais e quais documentos devem ser separados."
       },
       {
-        title: "Delineamento das ações",
-        desc: "Com as informações em mãos, verificamos pormenorizadamente a situação do caso concreto para indicação do melhor caminho jurídico."
+        title: "Planejamento das ações",
+        desc: "Com as informações em mãos, analisamos em detalhes cada ponto da sua situação para indicar a melhor estratégia jurídica."
       }
     ],
     faqSectionTitle: "Perguntas frequentes do trabalhador",
@@ -201,7 +201,7 @@ const SPECIALTIES_COPIES: Record<Exclude<PageId, 'home'>, CustomSpecialtyData> =
       },
       {
         title: "Estudo individual do CNIS",
-        desc: "Processamos de forma artesanal os registros para propor uma estratégia de solicitação ou retificação em face do INSS."
+        desc: "Analisamos detidamente cada período e contribuição para propor a melhor estratégia de solicitação ou retificação perante o INSS."
       }
     ],
     faqSectionTitle: "Perguntas de segurados sobre o INSS",
@@ -284,7 +284,7 @@ const SPECIALTIES_COPIES: Record<Exclude<PageId, 'home'>, CustomSpecialtyData> =
       }
     ],
     timelineTitle: "Como funciona o primeiro atendimento cível",
-    timelineDescription: "Com sigilo corporativo absoluto e agendamentos estruturados, acolhemos sua causa de forma privativa e segura.",
+    timelineDescription: "Com rigoroso sigilo profissional e agendamentos estruturados, analisamos o seu caso de forma segura e totalmente privativa.",
     timelineSteps: [
       {
         title: "Você entra em contato",
@@ -299,8 +299,8 @@ const SPECIALTIES_COPIES: Record<Exclude<PageId, 'home'>, CustomSpecialtyData> =
         desc: "Avaliamos as características normativas primárias de seu atrito e elencamos quais os papéis de suporte devem ser providenciados."
       },
       {
-        title: "Delineamento de estratégia",
-        desc: "Estudamos o acervo legal pertinente para sugerir se o caminho imediato é a notificação conciliadora ou o andamento à justiça comum."
+        title: "Definição do melhor caminho",
+        desc: "Analisamos as regras e o contrato em questão para indicar se o melhor caminho é a notificação conciliadora ou a via judicial."
       }
     ],
     faqSectionTitle: "Perguntas comuns solucionadas pelas regras civis",
@@ -512,7 +512,7 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
           </div>
 
           <p className="text-[11px] text-lux-text-muted font-light pt-2">
-            Atendimento em Itapira, região e em âmbito digital com amparo integral das normas de sigilo.
+            Atendimento em Itapira, região e de forma digital, com garantia de absoluto sigilo profissional e privacidade.
           </p>
         </div>
       </section>
@@ -629,7 +629,7 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
                   className="w-full py-3 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/20 rounded-full text-xs font-semibold uppercase tracking-widest flex items-center justify-center space-x-2 cursor-pointer transition-colors"
                 >
                   <MessageSquare className="w-3.5 h-3.5 text-emerald-400" />
-                  <span>PRESCREVER ORIENTAÇÃO ÉTICA</span>
+                  <span>FALAR COM A ADVOGADA</span>
                 </button>
               </div>
             </div>
@@ -707,7 +707,7 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
           </div>
 
           <p className="text-center text-xs text-lux-text-muted font-light pt-10 italic max-w-xl mx-auto leading-relaxed">
-            O primeiro contato permite entender melhor o caso e preparar as vias administrativas corretas para resguardo probatório.
+            O contato inicial permite compreender melhor o seu caso e orientar sobre a organização dos documentos necessários.
           </p>
         </div>
       </section>
@@ -744,7 +744,7 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
               <div className="h-0.5 w-12 bg-gold-brand" />
               
               <p className="text-sm md:text-base text-lux-text-secondary leading-relaxed font-light">
-                A Dra. Fernanda Parentoni Avancini atua com foco em orientação jurídica cuidadosa, comunicação clara e análise individual de cada situação de fato apresentada. O atendimento integrado preza por respeito aos limites éticos e dedicação artesanal aos seus interesses.
+                A Dra. Fernanda Parentoni Avancini atua com foco em orientação jurídica cuidadosa, comunicação clara e análise individual de cada situação de fato apresentada. O atendimento integrado preza por profundo respeito ético e dedicação atenta aos seus interesses.
               </p>
 
               {/* 4 Trust points in card margins */}
