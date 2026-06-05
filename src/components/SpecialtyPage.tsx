@@ -728,8 +728,9 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
                 <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-gold-brand to-gold-dark opacity-20 blur-lg transition duration-1000 group-hover:opacity-30 pointer-events-none" />
                 <div className="relative w-64 h-80 sm:w-72 sm:h-96 rounded-2xl border border-lux-border bg-lux-panel overflow-hidden">
                   <img
-                    src="/dra-fernanda-parentoni-avancini.png"
+                    src="/images/fernanda_avancini_office_1780499722468.png"
                     alt="Dra. Fernanda Parentoni Avancini — Advogada"
+                    referrerPolicy="no-referrer"
                     className="w-full h-full object-cover grayscale brightness-95 hover:grayscale-0 transition-all duration-500"
                   />
                 </div>
@@ -969,7 +970,7 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
                     onChange={(e) => setMessage(e.target.value)}
                     placeholder="Descreva brevemente sua situação."
                     className="w-full px-3.5 py-2.5 rounded-xl bg-lux-panel border border-lux-border focus:border-gold-brand focus:outline-none focus:ring-1 focus:ring-gold-brand text-xs md:text-sm font-light text-lux-text-primary transition-all resize-none"
-                  />
+                  ></textarea>
                 </div>
 
                 <button

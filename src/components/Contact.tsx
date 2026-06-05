@@ -228,7 +228,7 @@ export default function Contact() {
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   placeholder="Descreva brevemente sua situação."
                   className="w-full px-4 py-3 rounded-xl bg-lux-bg border border-lux-border focus:border-gold-brand focus:outline-none focus:ring-1 focus:ring-gold-brand text-lux-text-primary text-sm font-light placeholder:text-lux-text-muted/60 transition-all duration-200 resize-none"
-                />
+                ></textarea>
               </div>
 
               <p className="text-[11px] text-lux-text-muted leading-relaxed">
