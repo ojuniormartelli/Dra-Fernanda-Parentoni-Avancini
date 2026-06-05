@@ -87,8 +87,8 @@ export default function App() {
   };
 
   // Generated premium images for our custom showcase
-  const portraitUrl = '/src/assets/images/fernanda_avancini_office_1780499722468.png';
-  const officeBgUrl = '/src/assets/images/luxury_law_firm_interior_1780499738480.png';
+  const portraitUrl = '/images/fernanda_avancini_office_1780499722468.png';
+  const officeBgUrl = '/images/luxury_law_firm_interior_1780499738480.png';
 
   const isHome = currentPage === 'home';
 
