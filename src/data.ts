@@ -79,10 +79,10 @@ export const SPECIALTIES_DETAILS: Record<string, SpecialtyDetail> = {
       'Análise de contratos de prestação de serviços civis e terceirizações sob a ótica da legislação trabalhista.'
     ],
     howItWorks: [
-      'Entendimento das Circunvizinhanças: Conversa inicial acolhedora para que o cliente narre a rotina de trabalho ou a dificuldade da empresa.',
-      'Análise Documental: Verificação detalhada de recibos, cartões de ponto, extratos de FGTS e outros comprovantes materiais de trabalho.',
-      'Avaliação Transparente: Esclarecimento objetivo dos riscos operacionais e das verbas realmente de direito do cliente.',
-      'Busca por Diálogo ou Atuação Judicial: Tentativa de resolução extrajudicial lícita e ágil, ou propositura de ação de forma técnica junto ao judiciário competente.'
+      'Entendimento do Caso: Conversa inicial acolhedora para que o cliente relate a sua rotina de trabalho ou os desafios de sua empresa.',
+      'Análise Documental: Verificação detalhada de holerites, cartões de ponto, extrato de FGTS e outros comprovantes importantes.',
+      'Avaliação Transparente: Esclarecimento objetivo sobre a viabilidade prática, as possibilidades reais de êxito e os direitos do cliente.',
+      'Busca por Acordo ou Ativação Judicial: Tentativa de resolução extrajudicial de forma célere e amigável ou propositura da ação cabível junto ao Poder Judiciário.'
     ],
     differentials: [
       {
@@ -90,12 +90,12 @@ export const SPECIALTIES_DETAILS: Record<string, SpecialtyDetail> = {
         description: 'Toda defesa ou parecer é estudado, redigido e acompanhado pessoalmente pela Dra. Fernanda de forma próxima e focada.'
       },
       {
-        title: 'Linguagem Acessível e Simples',
-        description: 'Buscamos desmistificar o jargão do tribunal tradicional para que você se sinta seguro e compreenda todo o processo.'
+        title: 'Linguagem Acessível e Clara',
+        description: 'Traduzimos os termos técnicos e complexos da advocacia para que você compreenda e se sinta seguro em cada andamento.'
       },
       {
         title: 'Cálculos Elaborados com Critério',
-        description: 'Planilhas desenvolvidas com clareza matemática e pé no chão, buscando a realidade concreta de cada profissional ou negócio.'
+        description: 'Demonstrativos e cálculos elaborados com rigor e exatidão técnica, fundamentados na realidade concreta de cada caso.'
       }
     ],
     faqs: [
@@ -143,15 +143,15 @@ export const SPECIALTIES_DETAILS: Record<string, SpecialtyDetail> = {
     differentials: [
       {
         title: 'Explicação Didática do Planejamento',
-        description: 'Explicamos os cenários de aposentadoria de forma muito compreensível, sem termos difíceis ou custos desproporcionais.'
+        description: 'Explicamos os cenários de aposentadoria de forma clara e compreensível, sem rodeios ou termos excessivamente técnicos.'
       },
       {
         title: 'Foco em Solução de Inconsistências',
-        description: 'Corrigimos dados errados no INSS antes que o erro atrase a concessão definitiva de seu benefício planejado.'
+        description: 'Corrigimos erros e lacunas do seu extrato de contribuições (CNIS) antes de requerer o benefício, evitando atrasos e negativas.'
       },
       {
-        title: 'Acolhimento de Casos de Vulnerabilidade',
-        description: 'Tratamos benefícios como BPC/LOAS e auxílio-doença com a celeridade e o cuidado social humano que esses cuidados necessitam.'
+        title: 'Acolhimento Humano e Social',
+        description: 'Garantimos tratamento ágil e atencioso para benefícios como BPC/LOAS e auxílios de saúde, respeitando o momento sensível de cada pessoa.'
       }
     ],
     faqs: [
@@ -193,21 +193,21 @@ export const SPECIALTIES_DETAILS: Record<string, SpecialtyDetail> = {
     howItWorks: [
       'Análise do Conflito: Conversa para entender as razões do desacordo em cobranças, contratos ou relações de família e consumo.',
       'Auditoria de Documentos: Exame de contratos vigentes, notas de compras, mensagens de WhatsApp com promessas e comprovantes financeiros.',
-      'Busca de Solução Amigável: Notificação e reuniões para resolver o embate sem a lentidão que um processo de justiça tradicional costuma impor.',
+      'Busca de Solução Consensual: Auxílio na mediação ou notificação extrajudicial para resolver o conflito sem a necessidade e a morosidade de um processo judicial.',
       'Trâmite Judicial Dedicado: Em caso de litígio inevitável, elaboração de petição detalhada com acompanhamento transparente de cada andamento.'
     ],
     differentials: [
       {
-        title: 'Foco na Conciliação e Redução de Atritos',
-        description: 'Buscamos ativamente restabelecer acordos benéficos aos nossos clientes sem judicializar tudo de forma automática ou desmedida.'
+        title: 'Foco na Resolução Consensual',
+        description: 'Priorizamos o diálogo e o entendimento entre as partes interessadas para alcançar acordos ágeis, reduzindo tempo e custos financeiros.'
       },
       {
-        title: 'Contratos Inteiramente Personalizados',
-        description: 'Não trabalhamos com modelos prontos. Cada cláusula é repensada de acordo com as particularidades de seu negócio ou bem patrimonial.'
+        title: 'Contratos Inteiramente Customizados',
+        description: 'Análise minuciosa e estruturação de cláusulas exclusivas adaptadas de forma precisa às necessidades do seu negócio ou patrimônio.'
       },
       {
-        title: 'Suporte Confidencial Permanente',
-        description: 'Tratamos transições familiares de partilha ou desavenças financeiras sob absoluto sigilo ético e respeito humano.'
+        title: 'Sigilo Profissional Absoluto',
+        description: 'Condução de inventários, partilhas e conflitos patrimoniais restrita ao mais criterioso sigilo ético e respeito à integridade familiar.'
       }
     ],
     faqs: [
