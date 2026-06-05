@@ -105,16 +105,10 @@ export default function Specialties({ onSelectSpecialty }: SpecialtiesProps) {
                 <div className="pt-8 mt-6 border-t border-lux-border/40 flex items-center justify-between">
                   <button
                     onClick={() => onSelectSpecialty(card.id)}
-                    className="text-xs uppercase tracking-widest font-semibold text-gold-brand group-hover:text-gold-light transition-colors duration-200 cursor-pointer flex items-center space-x-2 outline-none"
+                    className="text-xs uppercase tracking-widest font-semibold text-gold-brand group-hover:text-gold-light transition-all duration-200 cursor-pointer flex items-center space-x-2 outline-none"
                   >
                     <span>CONHECER ESPECIALIDADE</span>
-                  </button>
-                  <button
-                    onClick={() => onSelectSpecialty(card.id)}
-                    aria-label="Conhecer Especialidade"
-                    className="w-8 h-8 rounded-full border border-lux-border group-hover:border-gold-brand group-hover:bg-gold-brand group-hover:text-lux-bg flex items-center justify-center transition-all duration-500 cursor-pointer outline-none"
-                  >
-                    <ArrowUpRight className="w-4 h-4 text-gold-brand group-hover:text-lux-bg transition-colors duration-200" />
+                    <ArrowUpRight className="w-4 h-4 text-gold-brand group-hover:text-gold-light group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
                   </button>
                 </div>
               </div>

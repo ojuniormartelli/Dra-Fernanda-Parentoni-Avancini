@@ -75,7 +75,7 @@ export default function Header({ currentPage, navigateTo, onOpenConsultation }: 
         >
           <div className="w-10 h-10 rounded-lg border border-gold-brand/30 flex items-center justify-center bg-lux-panel transition-all duration-300 group-hover:border-gold-brand overflow-hidden relative">
             <img 
-              src="/logo-fernanda-avancini.png" 
+              src="/logo-fernanda-parentoni-avancini.png" 
               alt="Logo Fernanda Parentoni Avancini" 
               className="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-300"
               onError={(e) => {

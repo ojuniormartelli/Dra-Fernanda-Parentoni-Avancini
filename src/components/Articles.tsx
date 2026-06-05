@@ -38,39 +38,26 @@ export default function Articles() {
           {ARTICLES_DATA.map((article) => (
             <article
               key={article.id}
-              className="group flex flex-col justify-between overflow-hidden rounded-2xl bg-lux-bg border border-lux-border hover:border-gold-brand/30 transition-all duration-300"
+              className="group flex flex-col justify-between overflow-hidden rounded-2xl bg-lux-bg border border-lux-border hover:border-gold-brand/40 transition-all duration-300 relative shadow-sm"
             >
-              {/* Image Frame */}
-              <div className="relative aspect-[16/9] overflow-hidden bg-lux-panel border-b border-lux-border flex items-center justify-center">
-                <img
-                  src={article.image}
-                  alt={article.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-103"
-                  referrerPolicy="no-referrer"
-                />
-                
-                {/* Category tag */}
-                <div className="absolute top-4 left-4 bg-lux-bg/95 backdrop-blur-sm border border-gold-brand/20 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-wider text-gold-brand">
-                  {article.category}
-                </div>
-              </div>
+              {/* Visual subtle card top detail */}
+              <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-transparent via-gold-brand/20 to-transparent group-hover:via-gold-brand/60 transition-all duration-500" />
 
               {/* Card Body */}
-              <div className="p-6 md:p-8 flex-grow flex flex-col justify-between space-y-4">
-                <div className="space-y-3">
-                  {/* Meta facts */}
-                  <div className="flex items-center space-x-4 text-[11px] text-lux-text-muted font-medium">
-                    <div className="flex items-center space-x-1">
-                      <Calendar className="w-3.5 h-3.5 text-gold-brand/80" />
+              <div className="p-6 md:p-8 flex-grow flex flex-col justify-between space-y-5">
+                <div className="space-y-4">
+                  {/* Category and Date Header Info */}
+                  <div className="flex items-center justify-between border-b border-lux-border/30 pb-4">
+                    <span className="bg-gold-brand/10 border border-gold-brand/20 px-2.5 py-1 rounded text-[9px] font-bold uppercase tracking-widest text-gold-light">
+                      {article.category}
+                    </span>
+                    <div className="flex items-center space-x-1 text-[10px] text-lux-text-muted font-bold uppercase tracking-wider">
+                      <Calendar className="w-3.5 h-3.5 text-gold-brand/70" />
                       <span>{article.date}</span>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                      <Clock className="w-3.5 h-3.5 text-gold-brand/80" />
-                      <span>{article.readTime}</span>
                     </div>
                   </div>
 
-                  <h3 className="text-lg font-semibold text-lux-text-primary tracking-tight transition-colors duration-200 group-hover:text-gold-light line-clamp-2 leading-snug">
+                  <h3 className="text-lg md:text-xl font-medium text-lux-text-primary tracking-tight transition-colors duration-300 group-hover:text-gold-light line-clamp-2 leading-snug">
                     {article.title}
                   </h3>
 
@@ -80,14 +67,15 @@ export default function Articles() {
                 </div>
 
                 {/* Read more button trigger */}
-                <div className="pt-4 border-t border-lux-border/40">
+                <div className="pt-4 border-t border-lux-border/40 flex items-center justify-between">
                   <button
                     onClick={() => setSelectedArticle(article)}
-                    className="inline-flex items-center space-x-2 text-xs font-semibold uppercase tracking-wider text-gold-brand group-hover:text-gold-light cursor-pointer outline-none transition-colors duration-200"
+                    className="inline-flex items-center space-x-1 text-xs font-semibold uppercase tracking-wider text-gold-brand group-hover:text-gold-light cursor-pointer outline-none transition-colors duration-200"
                   >
                     <span>LER ARTIGO</span>
                     <ChevronRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 text-gold-brand" />
                   </button>
+                  <span className="text-[10px] text-lux-text-muted font-medium">{article.readTime}</span>
                 </div>
               </div>
             </article>
@@ -138,16 +126,6 @@ export default function Articles() {
                     <span>{selectedArticle.readTime}</span>
                   </div>
                 </div>
-              </div>
-
-              {/* Cover in read-view */}
-              <div className="aspect-[16/9] rounded-xl overflow-hidden mb-8 border border-lux-border">
-                <img
-                  src={selectedArticle.image}
-                  alt={selectedArticle.title}
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
               </div>
 
               {/* Rich Content paragraphs */}

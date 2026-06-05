@@ -45,8 +45,8 @@ export default function Differences() {
           <span className="text-xs uppercase tracking-widest font-semibold text-gold-brand block">
             DIFERENCIAIS
           </span>
-          <h2 className="text-3xl md:text-4xl font-light text-lux-text-primary">
-            Por que escolher o escritório <span className="title-serif italic font-medium text-gold-brand">Fernanda Parentoni Avancini</span>?
+          <h2 className="text-3xl md:text-4xl font-light text-lux-text-primary tracking-tight text-balance">
+            Por que escolher o escritório <span className="title-serif italic font-medium text-gold-brand">Fernanda Parentoni Avancini?</span>
           </h2>
           <div className="h-0.5 w-16 bg-gold-brand mx-auto" />
           <p className="text-sm md:text-base text-lux-text-secondary font-light max-w-xl mx-auto pt-2 leading-relaxed">
