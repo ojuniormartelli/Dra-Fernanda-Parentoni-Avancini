@@ -24,10 +24,10 @@ export default function App() {
     return ['home', 'trabalhista', 'previdenciario', 'civel'].includes(pageParam) ? pageParam : 'home';
   });
 
-  // Landing page mode state (can be toggled interactively or read from URL lp=true)
+  // Landing page mode state (can be toggled interactively or read from URL lp=true or mode=lp)
   const [isLpMode, setIsLpMode] = useState<boolean>(() => {
     const params = new URLSearchParams(window.location.search);
-    return params.get('lp') === 'true';
+    return params.get('lp') === 'true' || params.get('mode') === 'lp';
   });
 
   // Track URL updates and allow backwards/forward history navigation in browser
@@ -35,7 +35,7 @@ export default function App() {
     const handlePopState = () => {
       const params = new URLSearchParams(window.location.search);
       const pageParam = params.get('page') as PageId;
-      const lpParam = params.get('lp') === 'true';
+      const lpParam = params.get('lp') === 'true' || params.get('mode') === 'lp';
       
       setCurrentPage(['home', 'trabalhista', 'previdenciario', 'civel'].includes(pageParam) ? pageParam : 'home');
       setIsLpMode(lpParam);

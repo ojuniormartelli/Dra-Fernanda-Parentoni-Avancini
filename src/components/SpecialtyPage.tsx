@@ -61,29 +61,7 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
   return (
     <div className="min-h-screen bg-lux-bg text-lux-text-primary pt-1 w-full pb-20">
       
-      {/* Interactive Floating Switcher for Showcase/Reviewer */}
-      <div className="fixed bottom-6 left-6 z-50 bg-lux-panel border border-gold-brand/40 shadow-2xl p-4 rounded-xl max-w-xs animate-fade-in">
-        <div className="flex flex-col space-y-2">
-          <div className="flex justify-between items-center space-x-4">
-            <span className="text-[10px] uppercase font-bold tracking-wider text-gold-brand">Modo de Visualização</span>
-            <span className={`text-[8.5px] uppercase font-bold px-2 py-0.5 rounded ${landingPageMode ? 'bg-gold-brand/10 text-gold-brand border border-gold-brand/20' : 'bg-lux-panel-light text-lux-text-secondary border border-lux-border'}`}>
-              {landingPageMode ? 'Landing Page' : 'Institucional'}
-            </span>
-          </div>
-          <p className="text-[10px] text-lux-text-muted leading-relaxed font-light">
-            {landingPageMode 
-              ? "Sem menus externos para manter o foco total do tráfego pago na conversão."
-              : "Com menus oficiais, links institucionais e navegação completa integrada."
-            }
-          </p>
-          <button
-            onClick={onToggleMode}
-            className="w-full text-center py-2 rounded-lg bg-gradient-to-r from-gold-dark to-gold-brand text-lux-bg font-semibold text-[10px] uppercase tracking-wider shadow-md hover:from-gold-brand hover:to-gold-light active:scale-97 cursor-pointer"
-          >
-            Mudar para Modo {landingPageMode ? 'Institucional' : 'Landing Page'}
-          </button>
-        </div>
-      </div>
+
 
       {/* Local Mini-Nav ONLY in Institutional mode */}
       {!landingPageMode && (
@@ -370,14 +348,14 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
                 </div>
 
                 <div className="space-y-1">
-                  <label htmlFor="lp-message" className="text-[10px] font-bold uppercase tracking-wider text-lux-text-muted">Breve Resumo da Demanda *</label>
+                  <label htmlFor="lp-message" className="text-[10px] font-bold uppercase tracking-wider text-lux-text-muted">MENSAGEM *</label>
                   <textarea
                     id="lp-message"
                     required
                     rows={3}
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
-                    placeholder="Diga brevemente como podemos ajudar..."
+                    placeholder="Descreva brevemente como podemos ajudar."
                     className="w-full px-3.5 py-2.5 rounded-xl bg-lux-panel border border-lux-border focus:border-gold-brand focus:outline-none focus:ring-1 focus:ring-gold-brand text-xs md:text-sm font-light text-lux-text-primary transition-all resize-none"
                   />
                 </div>
