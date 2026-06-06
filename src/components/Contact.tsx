@@ -42,7 +42,7 @@ export default function Contact() {
 
   const handleWhatsappClick = () => {
     // Redireciona para o link do WhatsApp
-    window.open('https://wa.me/551938133837', '_blank');
+    window.open('https://wa.me/5519982111193', '_blank');
   };
 
   return (

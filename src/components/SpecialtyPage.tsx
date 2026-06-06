@@ -382,7 +382,7 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
   };
 
   const handleWhatsappCTA = () => {
-    window.open('https://wa.me/551938133837', '_blank');
+    window.open('https://wa.me/5519982111193', '_blank');
   };
 
   return (
@@ -413,14 +413,6 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
             </div>
             
             <div className="flex items-center space-x-3">
-              {/* Toggle Mode indicator for AI preview context */}
-              <button 
-                onClick={onToggleMode}
-                className="hidden md:inline-flex px-3 py-1.5 rounded-md border border-lux-border hover:bg-lux-panel text-[9px] text-lux-text-muted uppercase font-bold tracking-widest transition-colors duration-200"
-              >
-                Voltar para Versão Institucional
-              </button>
-              
               <button
                 id="lp-header-whatsapp-call"
                 onClick={handleWhatsappCTA}
