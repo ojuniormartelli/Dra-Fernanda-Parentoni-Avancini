@@ -71,7 +71,16 @@ export default function Specialties({ onSelectSpecialty }: SpecialtiesProps) {
             return (
               <div
                 key={card.id}
-                className="group relative flex flex-col justify-between p-8 rounded-2xl bg-lux-bg border border-lux-border hover:border-gold-brand/40 hover:shadow-2xl hover:shadow-gold-brand/5 transition-all duration-500 hover:-translate-y-1 overflow-hidden"
+                onClick={() => onSelectSpecialty(card.id)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    onSelectSpecialty(card.id);
+                  }
+                }}
+                role="button"
+                tabIndex={0}
+                className="group relative flex flex-col justify-between p-8 rounded-2xl bg-lux-bg border border-lux-border hover:border-gold-brand/40 hover:shadow-2xl hover:shadow-gold-brand/5 transition-all duration-500 hover:-translate-y-1 overflow-hidden cursor-pointer focus:outline-none focus:ring-1 focus:ring-gold-brand/60"
               >
                 {/* Visual top border indicator that glows on hover */}
                 <div className="absolute top-0 inset-x-0 h-[1.5px] bg-gradient-to-r from-transparent via-gold-brand/0 to-transparent group-hover:via-gold-brand/60 transition-all duration-500" />
@@ -103,13 +112,12 @@ export default function Specialties({ onSelectSpecialty }: SpecialtiesProps) {
 
                 {/* Card CTA Footer */}
                 <div className="pt-8 mt-6 border-t border-lux-border/40 flex items-center justify-between">
-                  <button
-                    onClick={() => onSelectSpecialty(card.id)}
-                    className="text-xs uppercase tracking-widest font-semibold text-gold-brand group-hover:text-gold-light transition-all duration-200 cursor-pointer flex items-center space-x-2 outline-none"
+                  <div
+                    className="text-xs uppercase tracking-widest font-semibold text-gold-brand group-hover:text-gold-light transition-all duration-200 flex items-center space-x-2"
                   >
                     <span>CONHECER ESPECIALIDADE</span>
                     <ArrowUpRight className="w-4 h-4 text-gold-brand group-hover:text-gold-light group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
-                  </button>
+                  </div>
                 </div>
               </div>
             );

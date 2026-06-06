@@ -465,8 +465,19 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
         Headline focused on client doubts and pain points, with deep respect.
         ============================================================
       */}
-      <section className={`relative overflow-hidden border-b border-lux-border bg-gradient-to-b from-lux-bg to-lux-panel/30 ${landingPageMode ? 'pt-12 pb-16 md:py-24' : 'pt-36 pb-20 md:py-32'}`}>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[radial-gradient(ellipse_at_center,rgba(197,160,89,0.03),transparent)] pointer-events-none" />
+      <section className={`relative overflow-hidden border-b border-lux-border bg-lux-bg ${landingPageMode ? 'pt-12 pb-16 md:py-24' : 'pt-36 pb-20 md:py-32'}`}>
+        {/* Background photo of the office */}
+        <div className="absolute inset-0 z-0 select-none pointer-events-none">
+          <img
+            src="/images/luxury_law_firm_interior_1780499738480.png"
+            alt="Escritório"
+            referrerPolicy="no-referrer"
+            className="absolute inset-0 w-full h-full object-cover opacity-50 brightness-[0.8] grayscale-0"
+          />
+          {/* Subtle gradient overlay to keep it elegant, deep and dark while preserving photo visibility */}
+          <div className="absolute inset-0 bg-gradient-to-b from-lux-bg/70 via-lux-bg/60 to-lux-bg/78" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(197,160,89,0.1),transparent)]" />
+        </div>
         
         <div className="max-w-[1000px] mx-auto px-5 text-center relative z-10 space-y-6 md:space-y-8">
           <div className="inline-flex items-center space-x-2 bg-gold-brand/10 border border-gold-brand/20 px-3.5 py-1.5 rounded-full">
