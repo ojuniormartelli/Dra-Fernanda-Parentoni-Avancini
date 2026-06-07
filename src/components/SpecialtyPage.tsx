@@ -39,292 +39,292 @@ interface CustomSpecialtyData {
 
 const SPECIALTIES_COPIES: Record<Exclude<PageId, 'home'>, CustomSpecialtyData> = {
   trabalhista: {
-    tagline: "Direito Trabalhista",
+    tagline: "Direito do Trabalho",
     heroBadge: "ORIENTAÇÃO AO TRABALHADOR",
-    heroHeadline: "Tem dúvidas sobre o acerto de contas ou acha que seus direitos de trabalho não foram pagos corretamente? Esclareça sua situação de forma simples, humana e segura.",
-    heroDescription: "Seja para conferir os valores da sua demissão, tirar dúvidas sobre horas extras ou saber se seu contrato está de acordo com as regras, conte com uma análise atenta de cada detalhe do seu histórico profissional com absoluto sigilo.",
-    resolutionDescription: "A relação de trabalho deve ser equilibrada e respeitar os limites previstos em lei. Atuamos de forma atenta e individualizada para ajudar você a compreender sua situação jurídica com clareza, seja conferindo as parcelas do termo de rescisão, avaliando a regularidade de jornadas ou orientando sobre o andamento e o cumprimento de cada direito em vigor.",
-    situationsTitle: "Situações comuns do dia a dia no trabalho que analisamos",
+    heroHeadline: "Tem dúvidas sobre seu acerto de rescisão ou acredita que seus direitos de trabalho não foram pagos corretamente? Esclareça sua situação de forma humana, clara e segura.",
+    heroDescription: "Seja para conferir os cálculos de sua demissão, tirar dúvidas sobre horas extras acumuladas ou entender como funciona a rescisão devido a falhas do empregador, conte com nossa análise individual e confidencial.",
+    resolutionDescription: "O ambiente de trabalho deve ser pautado pela correção e pelo respeito mútuo. Auxiliamos você a entender cada detalhe da sua relação profissional, revisando detalhadamente as verbas da sua rescisão, horas cumpridas, intervalos e o registro correto da carteira de trabalho, priorizando sempre um diálogo transparente e sem termos complicados.",
+    situationsTitle: "Situações reais do dia a dia no trabalho que analisamos com você",
     situations: [
-      "Cálculo e conferência dos valores informados no termo de rescisão (rescisão do contrato)",
-      "Horas extras prestadas com frequência que não foram devidamente pagas ou compensadas",
-      "Trabalho realizado de forma frequente e subordinada sem o registro em carteira (trabalho informal)",
-      "Atrasos seguidos no pagamento do salário ou ausência de depósito mensal na conta do FGTS",
-      "Acúmulo de tarefas diferentes ou desvio para uma função diferente da contratada originalmente",
-      "Dúvidas técnicas sobre o funcionamento, direitos e cabimento de demissão por justa causa",
-      "Não recebimento de adicionais garantidos em lei, como insalubridade, periculosidade ou noturno",
-      "Ambiente profissional inadequado, hostilidades constantes ou desgaste emocional (assédio moral)",
-      "Dúvidas sobre o funcionamento e o pedido de rescisão indireta em razão de falhas graves do empregador"
+      "Conferência detalhada e cálculo de todos os valores apresentados no termo de rescisão de contrato",
+      "Horas extras cumpridas na rotina que não foram devidamente compensadas ou pagas pela empresa",
+      "Atividade continuada com horários e subordinação direta sem que tenha sido feito o registro em carteira",
+      "Atrasos recorrentes no pagamento mensal dos salários ou ausência de depósitos na conta do FGTS",
+      "Exercício frequente de funções diferentes ou acúmulo de tarefas além do acordado no contrato",
+      "Dúvidas claras sobre as regras e o cabimento legal de demissões sob justificativa de justa causa",
+      "Ausência de pagamento de adicionais garantidos em lei, como de periculosidade, insalubridade ou noturno",
+      "Exposição a cobranças excessivas, tratamento inadequado ou constrangimentos na empresa (assédio moral)",
+      "Orientações seguras sobre o pedido de rescisão indireta quando o empregador descumpre as regras do contrato"
     ],
-    forWhomDescription: "Esta orientação jurídica é indicada a trabalhadores, prestadores de serviços e ex-colaboradores que buscam clareza sobre suas regras de trabalho, valores devidos ou se depararam com desentendimentos contratuais.",
+    forWhomDescription: "Esta orientação jurídica informativa destina-se a trabalhadores, prestadores e ex-colaboradores que buscam clareza sobre suas condições contratuais ou que enfrentam impasses no acerto de contas.",
     forWhomItems: [
-      "Quem foi desligado da empresa recentemente e deseja conferir a exatidão das verbas rescisórias.",
-      "Profissionais que realizam jornadas prolongadas recorrentes e querem verificar se as horas extras estão corretas.",
-      "Quem prestou serviços contínuos sem registro em carteira e deseja avaliar se há direito ao reconhecimento do vínculo.",
-      "Trabalhadores expostos a atividades desgastantes ou nocivas à saúde que buscam esclarecimentos sobre adicionais."
+      "Trabalhadores recentemente desligados que desejam conferir a exatidão das verbas rescisórias recebidas.",
+      "Profissionais submetidos a jornadas extensas recorrentes que querem verificar se o banco de horas está regular.",
+      "Prestadores de serviço sem registro em carteira que precisam avaliar se preenchem os critérios do vínculo empregatício.",
+      "Pessoas expostas a atividades nocivas à saúde que buscam esclarecimentos sobre adicionais não pagos."
     ],
-    notForWhomDescription: "Esta seção é dedicada exclusivamente à orientação informativa do trabalhador enquanto pessoa física. Não realizamos consultoria empresarial ou defesa de grandes corporações, focando nossa atenção no estudo de cada histórico de forma singular.",
-    howWeHelpTitle: "Como funciona a nossa análise profissional",
-    howWeHelpSubtitle: "A avaliação de cada caso de trabalho é conduzida de forma humana, transparente e baseada nas regras vigentes, trazendo clareza para que você compreenda sua situação de forma prática.",
+    notForWhomDescription: "Nossa atuação informativa foca exclusivamente no trabalhador enquanto pessoa física, oferecendo análise personalizada para cada histórico. Não prestamos assessoria ou defesa a redes de grandes corporações ou marcas envolvidas em litígios institucionais.",
+    howWeHelpTitle: "Como o escritório auxilia no seu caso",
+    howWeHelpSubtitle: "Avaliamos suas dúvidas de maneira atenta e descomplicada, traduzindo as previsões da lei para que você entenda sua situação real de forma amigável e segura.",
     howWeHelp: [
       {
-        title: "Estudo do Caso",
-        desc: "Análise cuidadosa do seu histórico profissional para identificar possíveis falhas ou desrespeito às regras trabalhistas."
+        title: "Leitura do Histórico",
+        desc: "Análise cuidadosa da sua rotina de trabalho para verificar o que de fato aconteceu no dia a dia da sua atividade."
       },
       {
-        title: "Esclarecimento Prático",
-        desc: "Explicação em tom simples e de fácil entendimento das regras aplicáveis ao seu cargo, convenção coletiva e setor."
+        title: "Esclarecimento Direto",
+        desc: "Explicação em tom simples e acessível das regras aplicáveis ao seu setor e Convenção Coletiva de Trabalho."
       },
       {
-        title: "Conferência de Documentos",
-        desc: "Análise detalhada de termos de rescisão (TRCT), holerites, extratos do FGTS e cartões de frequência para verificar irregularidades."
+        title: "Conferência Documental",
+        desc: "Exame minucioso de recibos, extratos de FGTS, folhas de ponto e carteira para apontar incorreções em valores."
       },
       {
-        title: "Orientação Preventiva",
-        desc: "Direcionamento focado em atitudes éticas e seguras, priorizando caminhos amigáveis e soluções que evitem litígios desgastantes."
+        title: "Caminhos Consensuais",
+        desc: "Direcionamento focado em atitudes corretas e éticas, priorizando caminhos amigáveis que evitem discussões judiciais desgastantes."
       }
     ],
-    timelineTitle: "Como funciona o atendimento informativo",
-    timelineDescription: "O fluxo de comunicação é desenhado de forma simples, descomplicada e voltado inteiramente a resguardar sua privacidade e sigilo.",
+    timelineTitle: "Etapas do atendimento informativo",
+    timelineDescription: "Projetamos um fluxo de contato simples, pautado pela mútua confiança, respeito ao sigilo das suas informações e total discrição.",
     timelineSteps: [
       {
-        title: "Agendamento Inicial",
-        desc: "Você entra em contato de forma reservada através do formulário de e-mail ou do nosso link de WhatsApp."
+        title: "Início de Conversa",
+        desc: "Você entra em contato conosco por mensagem direta no WhatsApp ou enviando o formulário de e-mail deste site."
       },
       {
-        title: "Descrição da Situação",
-        desc: "Você nos apresenta um resumo contendo o tempo de trabalho na empresa, a função que exercia e sua dúvida principal."
+        title: "Apresentação de Perguntas",
+        desc: "Você descreve as suas principais dúvidas, o tempo de trabalho na empresa e as tarefas reais que desempenhava."
       },
       {
-        title: "Exame das Condições",
-        desc: "Avaliamos as características da sua situação trabalhista e indicamos quais os papéis e documentos essenciais a separar."
+        title: "Organização dos Papéis",
+        desc: "Auxiliamos você a identificar quais documentos são necessários (como carteira, recibos e conversas) para analisar seu histórico."
       },
       {
-        title: "Parecer de Orientação",
-        desc: "Com as informações organizadas, explicamos de forma transparente a sua situação contratual e as alternativas legais aplicáveis."
+        title: "Balanço e Esclarecimento",
+        desc: "Com as informações organizadas, explicamos de forma transparente os seus reais direitos previstos em lei."
       }
     ],
-    faqSectionTitle: "Dúvidas comuns respondidas sob a ótica da lei",
+    faqSectionTitle: "Perguntas frequentes sobre direitos do trabalhador",
     faqs: [
       {
-        q: "Qual é o tempo limite para buscar os meus direitos trabalhistas na Justiça?",
-        a: "A legislação estabelece que o trabalhador tem o prazo de até 2 anos após o término do contrato de trabalho para entrar com um processo. Nesse processo, é permitido requerer os valores pendentes referentes aos últimos 5 anos de contratação."
+        q: "Qual é o tempo limite para buscar os meus direitos de trabalho na Justiça?",
+        a: "A legislação estabelece que o trabalhador tem o prazo de até 2 anos após o término do contrato de trabalho para propor uma ação judicial. Nesse caso, é permitido requerer os direitos não pagos dos últimos 5 anos de contratação. Decorrido o prazo de 2 anos, perde-se o direito de reivindicar."
       },
       {
-        q: "Trabalhei sem carteira assinada. Eu também tenho as garantias da CLT?",
-        a: "Sim. Se você prestava serviços de forma frequente, recebendo ordens e salários, os requisitos do vínculo de emprego estão presentes. Comprovada essa situação de fato, o registro em carteira deve ser feito e os direitos trabalhistas (férias, FGTS e 13º salário) são devidos."
+        q: "Trabalhei vários meses sem carteira assinada. Eu perco as minhas garantias legais?",
+        a: "Não. Na relação de trabalho, o que vale é a prática do dia a dia. Se você prestava serviços de forma contínua, pessoal, sob ordens e mediante salário, os critérios do vínculo estão presentes e o registro deve ser formalizado para garantir o recebimento de férias, 13º e FGTS."
       },
       {
-        q: "Como posso comprovar as horas extras se o registro de ponto não marcava os horários corretos?",
-        a: "As horas trabalhadas além do horário normal podem ser comprovadas por meio de depoimentos de testemunhas que acompanhavam a rotina, registros de mensagens eletrônicas de cobrança, e-mails corporativos fora do expediente ou relatórios de tarefas."
+        q: "Como posso comprovar que fazia horas extras se o registro de ponto era preenchido de forma errada?",
+        a: "A jornada extra de trabalho pode ser demonstrada por outras provas além dos cartões de ponto, como conversas de WhatsApp por escrito, e-mails enviados fora do horário do expediente, relatórios internos ou por depoimentos de testemunhas que acompanhavam a rotina."
       },
       {
-        q: "Existe um prazo máximo para que a empresa realize o acerto e pague as verbas da demissão?",
-        a: "Sim. O pagamento integral da rescisão e a liberação das guias (para saque do FGTS e seguro-desemprego) devem ocorrer no prazo máximo de até 10 dias corridos, contados a partir do encerramento do contrato. O descumprimento gera direito a uma multa de um salário em favor do trabalhador."
+        q: "O que é e como funciona a dispensa por rescisão indireta?",
+        a: "A rescisão indireta funciona como uma 'rescisão por culpa da empresa'. Quando o empregador comete falhas graves, como atrasar com frequência salários, não depositar o FGTS ou expor o colaborador a humilhações, o trabalhador pode solicitar o rompimento contratual recebendo todos os valores devidos na demissão sem justa causa."
       },
       {
-        q: "É possível realizar essa verificação e o primeiro atendimento de forma online?",
-        a: "Perfeitamente. O contato inicial por vias digitais ou WhatsApp oferece rapidez para o esclarecimento de dúvidas e permite o envio prático de fotografias dos holerites e termo de rescisão com completo sigilo e discrição."
+        q: "A análise do meu caso e o envio de documentos podem ser feitos de forma online?",
+        a: "Sim. Para sua maior praticidade, o atendimento preliminar e o recebimento das imagens dos documentos ocorrem de forma digital, mantendo absoluto sigilo profissional sobre todos os seus dados."
       }
     ],
     formSubjects: [
-      "Conferência de Verbas Rescisórias",
-      "Esclarecimento sobre Horas Extras",
-      "Trabalho sem Carteira Assinada",
-      "Dúvidas sobre Demissão por Justa Causa",
-      "Problemas com Ambiente de Trabalho / Assédio",
-      "Orientações sobre Rescisão Indireta",
-      "Outras Dúvidas de Direito Trabalhista"
+      "Revisão e Conferência de Rescisão",
+      "Dúvidas sobre Horas Extras",
+      "Trabalho sem Carteira Registrada",
+      "Dúvidas sobre Demissão e Justa Causa",
+      "Problemas ou Constrangimentos na Empresa",
+      "Esclarecimentos sobre Rescisão Indireta",
+      "Outros Assuntos de Direito de Trabalho"
     ],
-    defaultSubject: "Conferência de Verbas Rescisórias"
+    defaultSubject: "Revisão e Conferência de Rescisão"
   },
   previdenciario: {
     tagline: "Direito Previdenciário",
     heroBadge: "PLANEJAMENTO E APOSENTADORIA",
-    heroHeadline: "Tem dúvidas sobre o seu tempo de contribuição ou quer planejar sua futura aposentadoria? Esclareça seu caso com uma análise individualizada e cuidadosa.",
-    heroDescription: "A aproximação do momento de se aposentar ou a necessidade de requerer um benefício exige um estudo atento do histórico de pagamentos, evitando que você faça seu pedido em uma regra desfavorável ou menos vantajosa.",
-    resolutionDescription: "O amparo da previdência social é fundamental em momentos de transição, maturidade e cuidados com a saúde. Nosso escritório conduz a análise minuciosa de cada histórico de contribuição, auxiliando você a entender as diferentes regras criadas pela Reforma da Previdência, planejar os recolhimentos futuros e organizar a documentação com total clareza e respeito.",
-    situationsTitle: "Situações comuns do dia a dia em que se recomenda analisar seu histórico previdenciário",
+    heroHeadline: "Quer planejar seu momento de aposentadoria ou tem dificuldades com algum benefício do INSS? Entenda sua situação de forma clara, objetiva e sem termos difíceis.",
+    heroDescription: "Descubra qual é a regra de transição mais favorável para sua futura concessão de aposentadoria ou compreenda as alternativas legais em casos de pedidos negados ou suspensos pelo órgão previdenciário.",
+    resolutionDescription: "A decisão sobre o momento ideal para solicitar sua aposentadoria é definitiva para o seu sustento. Conduzimos a análise de todo o seu histórico de pagamentos, auxiliando você a corrigir pendências que atrasam a concessão, a entender as diferentes regras em vigor e a apresentar suas solicitações com o suporte adequado de quem entende do assunto.",
+    situationsTitle: "Situações comuns envolvendo o INSS que ajudamos a analisar de perto",
     situations: [
-      "Incerteza sobre em qual regra de transição pós-Reforma da Previdência você se enquadra",
-      "Aposentadoria, auxílio por incapacidade temporária (auxílio-doença) ou pensão por morte indeferidos pelo INSS",
-      "Necessidade de corrigir erros, lacunas ou pendências no seu extrato oficial de contribuições (CNIS)",
-      "Planejamento de recolhimentos futuros para projetar as melhores estimativas para sua aposentadoria",
-      "Dúvidas sobre as condições e requisitos legais para requerer o Benefício de Prestação Continuada (BPC/LOAS)",
-      "Dificuldades em reunir os documentos para comprovação de tempo de contribuição especial, rural ou de pesca",
-      "Demora excessiva do INSS para emitir um posicionamento formal no seu processo administrativo",
-      "Dúvidas e orientações preliminares sobre a perícia médica em auxílios por incapacidade",
-      "Avaliação de viabilidade jurídica para revisão de benefícios de aposentadoria já concedidos pelo INSS"
+      "Dúvidas de qual das cinco regras de transição pós-Reforma da Previdência trará a melhor renda para você",
+      "Pedidos de aposentadorias ou auxílios de saúde que foram indeferidos, negados ou suspensos pelo INSS",
+      "Necessidade de corrigir erros, vínculos de trabalho faltantes ou salários zerados no extrato oficial CNIS",
+      "Projeção de contribuições futuras para evitar recolher em valores incorretos ou em códigos inapropriados",
+      "Dúvidas quanto às exigências de renda e laudos para solicitar o Benefício de Prestação Continuada (BPC/LOAS)",
+      "Dificuldades em reunir documentos para comprovar tempos de atividade especial (insalubre), rural ou de pesca",
+      "Atraso recorrente do INSS na análise de pedidos ou na resposta formal de recursos administrativos",
+      "Orientações prévias e organização de documentos para a realização de perícias médicas da previdência",
+      "Análise de regras jurídicas para avaliar a possibilidade de requerer a revisão de aposentadoria já concedida"
     ],
-    forWhomDescription: "Esta orientação técnica destina-se a segurados do INSS, trabalhadores autônomos, profissionais de diversas áreas e idosos ou pessoas com deficiência que necessitam de amparo previdenciário e buscam clareza jurídica em seus pedidos.",
+    forWhomDescription: "Esta orientação jurídica informativa destina-se a segurados do INSS, profissionais liberais, autônomos e pessoas que necessitam de suporte em benefícios de saúde ou amparo da assistência social.",
     forWhomItems: [
-      "Segurados que estão próximos de atingir a idade ou as exigências de tempo de contribuição para se aposentar.",
-      "Pessoas afastadas por problemas de saúde de longo prazo que buscam compreender os critérios do benefício por incapacidade.",
-      "Idosos em vulnerabilidade social ou pessoas com impedimentos de saúde que desejam informações sobre o BPC/LOAS.",
-      "Familiares e dependentes que precisam de orientações seguras sobre o funcionamento da pensão por morte."
+      "Trabalhadores próximos de preencher a idade mínima ou o tempo de contribuição exigido por lei.",
+      "Pessoas com problemas de saúde duradouros que buscam analisar se atendem às exigências do auxílio por incapacidade.",
+      "Idosos em vulnerabilidade de renda ou pessoas com deficiência que pretendem compreender os critérios do LOAS.",
+      "Dependentes e cônjuges que buscam orientações para reunir os papéis exigidos no pedido de pensão por morte."
     ],
-    notForWhomDescription: "Nossos esclarecimentos informativos tratam puramente do Regime Geral da Previdência Social (INSS) e das regras da assistência social (LOAS). Sendo assim, não realizamos estudos sobre planos corporativos fechados de previdência privada.",
-    howWeHelpTitle: "Como funciona a nossa análise previdenciária",
-    howWeHelpSubtitle: "A análise do seu tempo de contribuição é desenvolvida sob rigor ético e olhar atencioso, trazendo clareza para que o segurado saiba as reais regras de lei que amparam seu caso.",
+    notForWhomDescription: "Nossos esclarecimentos amparam exclusivamente o Regime Geral de Previdência Social (INSS) e amparos assistenciais (BPC). Dessa forma, não prestamos assessoria a fundações ou planos corporativos de previdência privada fechada.",
+    howWeHelpTitle: "Como realizamos sua análise previdenciária",
+    howWeHelpSubtitle: "Estudamos o seu tempo de contribuição com rigor técnico e cuidado, traduzindo as regras de pedágio e fatores de cálculo para que você compreenda tudo sem complicação.",
     howWeHelp: [
       {
-        title: "Regularização de Inconsistências",
-        desc: "Exame cuidadoso do extrato de contribuições (CNIS) para apontar recolhimentos abaixo do mínimo, lacunas e solicitar retificações."
+        title: "Correção do Extrato",
+        desc: "Examinamos o seu extrato de contribuições (CNIS) para apontar pendências de valores que possam prejudicar o seu cálculo."
       },
       {
-        title: "Orientação de Transição",
-        desc: "Simulação do seu tempo trabalhado nas diferentes regras pós-reforma para ajudar você a identificar o momento mais adequado de pedir o benefício."
+        title: "Cálculo de Regras",
+        desc: "Projetamos o seu histórico de trabalho nas novas regras da reforma, identificando qual alternativa trará menor redução financeira."
       },
       {
-        title: "Análise de Laudos de Saúde",
-        desc: "Triagem de atestados, laudos médicos, receitas e exames de saúde para auxiliar na comprovação necessária em benefícios por incapacidade."
+        title: "Organização de Laudos",
+        desc: "Auxiliamos você a agrupar atestados médicos, receitas e exames de forma adequada para apresentar no dia da perícia."
       },
       {
-        title: "Apoio Técnico",
-        desc: "Acompanhamento das decisões administrativas do INSS e instrução clara sobre os documentos que devem ser apresentados."
+        title: "Suporte de Documentação",
+        desc: "Orientamos sobre as carteiras de trabalho antigas, contratos e certidões necessárias para que seu pedido corra sem exigências."
       }
     ],
-    timelineTitle: "Como funciona o atendimento informativo",
-    timelineDescription: "O fluxo de conversa é projetado para acolher suas dúvidas de forma humana, transparente e com respeito ao segredo profissional.",
+    timelineTitle: "Como funciona a conversa informativa",
+    timelineDescription: "Proporcionamos um contato acolhedor e simples, preservando inteiramente o sigilo profissional de suas informações desde o início.",
     timelineSteps: [
       {
-        title: "Agendamento Reservado",
-        desc: "Você inicia o contato por e-mail ou mandando mensagens pelo WhatsApp de forma totalmente protegida."
+        title: "Agendamento Prévio",
+        desc: "Você entra em contato enviando suas principais dúvidas pelo WhatsApp ou pelo canal de e-mail deste site."
       },
       {
-        title: "Relato do Histórico",
-        desc: "Você nos apresenta os seus dados básicos: tempo trabalhado, idade e se já possui algum benefício em análise ou negado."
+        title: "Recebimento do Extrato",
+        desc: "Organizamos os seus dados, orientando você sobre como baixar o extrato CNIS no aplicativo oficial do órgão."
       },
       {
-        title: "Instrução de Documentos",
-        desc: "Indicamos quais são as documentações essenciais (carteiras de trabalho antigas, carnês ou laudos) adequadas para a análise."
+        title: "Exame do Histórico",
+        desc: "Estudamos suas datas de contribuição, idades atingidas e a existência de tempos especiais a serem convertidos."
       },
       {
-        title: "Estudo e Recomendações",
-        desc: "Analisamos as suas informações de forma individualizada e explicamos quais são as reais alternativas e caminhos legais sob as regras atuais."
+        title: "Orientação e Direcionamento",
+        desc: "Apresentamos por escrito as melhores alternativas de lei para o seu caso, indicando quais as atitudes mais seguras."
       }
     ],
-    faqSectionTitle: "Dúvidas frequentes respondidas sob a ótica legal",
+    faqSectionTitle: "Perguntas de rotina sobre aposentadorias e auxílios",
     faqs: [
       {
-        q: "O INSS negou o meu pedido de auxílio-doença mesmo com recomendação médica. Como devo proceder?",
-        a: "No caso de indeferimento de benefício por incapacidade na via administrativa, o segurado pode apresentar um recurso perante o próprio INSS ou optar por levar a discussão à via judicial. Na esfera judicial, é realizada uma perícia médica isenta, conduzida por profissional nomeado pela Justiça."
+        q: "O INSS negou meu pedido de auxílio-doença mesmo com atestado médico recomendando o repouso. O que fazer?",
+        a: "Os atestados de consultórios particulares, embora sejam extremamente necessários, não obrigam legalmente o INSS a deferir o benefício. Se ele foi negado na via administrativa, o segurado pode apresentar um recurso escrito ao próprio INSS ou levar o caso à análise judicial, onde passará por um exame físico agendado com médico perito nomeado pela Justiça."
       },
       {
-        q: "Quem tem direito de requerer o Benefício de Prestação Continuada (BPC/LOAS)?",
-        a: "O BPC destina-se a idosos a partir de 65 anos de idade ou pessoas com deficiência que comprovem limitação de longo prazo. É exigido estar inscrito e regularizado no CadÚnico do município e demonstrar critérios de baixa renda familiar."
+        q: "Quais os requisitos reais para pleitear o Benefício de Prestação Continuada (BPC/LOAS)?",
+        a: "O BPC/LOAS é um amparo de assistência social pago pelo governo. Ele exige do beneficiário idoso a idade mínima de 65 anos, e da pessoa com deficiência uma limitação física ou mental de longo prazo. Além disso, a lei impõe o cadastramento atualizado no Cadastro Único (CadÚnico) e a prova de baixa renda do grupo do lar."
       },
       {
-        q: "O que é e para que serve a elaboração do planejamento previdenciário?",
-        a: "É uma simulação detalhada baseada em todo o seu histórico contributivo perante o INSS. O planejamento previne decisões precipitadas e indica de forma segura qual das regras de transição vigentes trará o cálculo mais adequado e seguro à sua realidade de vida."
+        q: "O que é o planejamento de aposentadoria e qual a sua finalidade prática?",
+        a: "O planejamento é uma simulação matemática que cruza todas as suas contribuições antigas com as novas regras criadas em 2019. Ele previne que você peça seu benefício antes da hora ou em regras menos favoráveis, evitando perdas de renda definitivas por toda a sua vida."
       },
       {
-        q: "Existe um prazo legal para que o INSS dê uma resposta formal ao pedido de benefício?",
-        a: "Sim. A legislação previdenciária estabelece prazos estimados (de 45 a 90 dias dependendo do tipo de benefício) para decisão administrativa. Havendo atraso desproporcional e sem justificativa razoável, é cabível tomar providências legais para exigir a respectiva análise fática."
+        q: "Existe um prazo máximo para que o INSS decida sobre concessões de benefícios?",
+        a: "Sim. A legislação regulamentar prevê prazos formais para resposta dos pedidos, variando entre 45 e 90 dias úteis dependendo da modalidade. Havendo atrasos excessivos e que não possuam qualquer justificativa razoável, é pertinente utilizar medidas formais contra a demora."
       },
       {
-        q: "A documentação e a simulação das regras podem ser feitas de forma remota?",
-        a: "Com certeza. O atendimento inicial, o compartilhamento do extrato do CNIS e o envio das fotografias dos documentos ocorrem de forma digital e prática, sob profundo respeito à ética profissional e privacidade dos envolvidos."
+        q: "É possível realizar essa análise do meu caso inteiramente pela internet?",
+        a: "Perfeitamente. O estudo de dados, a entrega de documentos e as orientações iniciais sobre as regras do INSS podem ser realizados de forma 100% digital e prática, garantindo absoluto segredo profissional."
       }
     ],
     formSubjects: [
-      "Simulação de Tempo de Aposentadoria",
-      "Planejamento Previdenciário Completo",
-      "Benefício Negado ou Descontinuado pelo INSS",
+      "Planejamento e Simulação de Aposentadoria",
+      "Análise de Benefício Negado pelo INSS",
       "Orientações sobre BPC / LOAS",
-      "Regularização e Pendências no CNIS",
-      "Esclarecimentos sobre Auxílio por Incapacidade",
-      "Assuntos Diversos de Direito Previdenciário"
+      "Correção de Erros no Extrato CNIS",
+      "Tempo de Trabalho Especial ou Especializado",
+      "Dúvidas sobre Auxílio por Incapacidade",
+      "Dúvidas Gerais de Direito Previdenciário"
     ],
-    defaultSubject: "Simulação de Tempo de Aposentadoria"
+    defaultSubject: "Planejamento e Simulação de Aposentadoria"
   },
   civel: {
-    tagline: "Direito Cível e Relações de Consumo",
-    heroBadge: "RELAÇÕES CIVIS E CONTRATUAIS",
-    heroHeadline: "Precisa resolver questões de contratos, cobranças ou um inventário consensual de forma amigável? Esclareça sua situação de forma segura, com orientação clara e humana.",
-    heroDescription: "A condução inadequada de compromissos ou a falta de clareza das obrigações assumidas podem ocasionar problemas no dia a dia. Encontre orientações profissionais focadas em harmonizar acordos e manter relações pacíficas.",
-    resolutionDescription: "O Direito Cível organiza as obrigações fundamentais e preserva a destinação tranquila de bens pessoais ou familiares. Nosso escritório atua no esclarecimento de cláusulas de compra e venda de imóveis, na cobrança fundamentada de valores pendentes e na realização de inventários consensuais diretamente em cartório, priorizando caminhos amigáveis e seguros.",
-    situationsTitle: "Situações do dia a dia cível em que a nossa orientação pode ajudar",
+    tagline: "Direito Cível",
+    heroBadge: "RELAÇÕES CIVIS E CONTRATOS",
+    heroHeadline: "Precisa de orientação clara sobre contratos, cobranças ou divisão consensual de bens? Esclareça sua situação de forma simples e humana.",
+    heroDescription: "Evite conflitos contratuais e desgastes pessoais. Encontre suporte atencioso para compreender termos de compra e venda de imóveis, partilhas consensuais de bens diretamente em cartório ou notificações extrajudiciais de forma pacífica e segura.",
+    resolutionDescription: "O Direito Cível organiza as obrigações fundamentais das relações privadas e familiares. Atuamos de forma atenta e individualizada para ajudar você a mediar conflitos materiais, resolver pendências contratuais, redigir acordos sob medida e providenciar inventários em cartório de forma amigável, transparente e mantendo o perfeito equilíbrio entre as partes.",
+    situationsTitle: "Situações do cotidiano cível e relações de consumo em que podemos ajudar",
     situations: [
-      "Dúvidas quanto ao cumprimento de termos e cláusulas em contratos de prestação de serviços",
-      "Insegurança em negociações e assinaturas de termos de compra e venda de imóveis",
-      "Pendência financeira para recebimento de valores em atraso (cheques ou notas promissórias)",
-      "Cobranças indevidas de serviços, falhas em compras de valor expressivo e direitos do consumidor",
-      "Inserção injustificada do CPF em cadastros de negativados por erros das operadoras ou bancos",
-      "Dúvidas e necessidade de orientações para realizar o inventário consensual ou partilha amigável de bens",
-      "Necessidade de elaborar um contrato personalizado para resguardar um acordo do cotidiano",
-      "Uso de notificações extrajudiciais para formalizar cobranças ou buscar acordos de forma amigável",
-      "Problemas relacionados a obrigações cotidianas, desentendimentos no bairro ou danos em propriedade"
+      "Dúvidas persistentes sobre deveres, multas e garantias previstos em contratos de prestação de serviços",
+      "Inseguranças em cláusulas contratuais na realização de compra ou venda de terrenos e imóveis",
+      "Pendência de valores em atraso para recebimento (como contratos descumpridos, notas promissórias ou cheques)",
+      "Cobranças de taxas abusivas ou indevidas e falhas graves de atendimento em compras de grande valor",
+      "Inclusão indevida ou sem aviso prévio do seu CPF em cadastros de proteção ao crédito (SPC ou Serasa)",
+      "Necessidade de realizar o inventário consensual ou partilha amigável de bens da família diretamente em cartório",
+      "Necessidade de redigir um contrato personalizado para resguardar adequadamente um acordo do dia a dia",
+      "Envio de notificações formais (notificação extrajudicial) para constituir mora ou buscar soluções amigáveis",
+      "Desentendimentos sobre obrigações civis privadas, conflitos de vizinhança ou necessidade de reparação por danos"
     ],
-    forWhomDescription: "Este canal informativo foi planejado para orientar cidadãos e empreendedores autônomos que desejam segurança ao assinar compromissos contratuais e buscam soluções equilibradas para pendências materiais ou sucessões familiares.",
+    forWhomDescription: "Esta orientação jurídica informativa destina-se a pessoas, profissionais autônomos e famílias que buscam segurança em negociações materiais, termos contratuais e transições amigáveis de bens.",
     forWhomItems: [
-      "Quem realiza a compra ou venda de imóveis e deseja avaliar os riscos e cláusulas contratuais antes da assinatura.",
-      "Membros de famílias que se encontram em acordo e desejam formalizar o inventário diretamente em cartório.",
-      "Consumidores que enfrentam problemas em compras importantes ou negativações de crédito sem notificação.",
-      "Credores de títulos que preferem solucionar a cobrança de débitos pendentes de forma respeitosa e extrajudicial."
+      "Quem realiza a compra de imóveis e deseja avaliar os riscos contratuais envolvidos antes de assinar.",
+      "Membros de famílias que se encontram em pleno consenso e querem realizar o inventário em cartório.",
+      "Consumidores afetados por cobranças abusivas de empresas prestadoras de serviço ou negativações sem aviso.",
+      "Credores de títulos que preferem regularizar o recebimento de valores em atraso de forma respeitosa."
     ],
-    notForWhomDescription: "Nossa atuação informativa nessa área se atém a contratos, sucessões extrajudiciais amigáveis e relações cotidianas privadas. Não realizamos consultoria em divórcios litigiosos graves, disputas de guarda na Vara de Família ou contendas penais e criminais.",
-    howWeHelpTitle: "Como atua nosso suporte profissional",
-    howWeHelpSubtitle: "Buscamos avaliar o seu problema priorizando caminhos práticos e extrajudiciais, minimizando conflitos prolongados e reduzindo as preocupações cotidianas.",
+    notForWhomDescription: "Nossa atuação consultiva nesta área é estritamente voltada a contratos civis, inventários consensuais e obrigações privadas cotidianas. Não atuamos em divórcios litigiosos destrutivos, disputas graves de guarda na Vara de Família ou na vertente de Direito Penal e Criminal.",
+    howWeHelpTitle: "Como o escritório auxilia nas suas relações civis",
+    howWeHelpSubtitle: "Buscamos avaliar o seu problema com foco em soluções práticas, prevenindo longas batalhas judiciais de forma sustentável para o seu patrimônio.",
     howWeHelp: [
       {
-        title: "Análise de Riscos",
-        desc: "Analisamos minuciosamente as cláusulas e termos contratuais para apontar ambiguidades, condições desequilibradas ou riscos de litígio."
+        title: "Varredura de Cláusulas",
+        desc: "Examinamos com atenção os termos de propostas e contratos para apontar multas excessivas ou obrigações injustas."
       },
       {
-        title: "Soluções Consensuais",
-        desc: "Instruímos na elaboração de acordos, termos de quitação e acordos extrajudiciais para mediar soluções sem desgaste judicial."
+        title: "Soluções Extrajudiciais",
+        desc: "Instruímos no envio de notificações e formulação de recibos para resolver passivos e cobranças de forma pacífica."
       },
       {
         title: "Relações de Consumo",
-        desc: "Esclarecemos sobre os caminhos adequados para exigir direitos de garantia, devolução ou cancelamento de restrições indevidas."
+        desc: "Esclarecemos sobre os prazos de cancelamento, direito a garantias e providências contra cobranças de má-fé."
       },
       {
-        title: "Procedimentos em Cartório",
-        desc: "Orientamos sobre as etapas e documentações necessárias para partilhas e inventários consensuais extrajudiciais."
+        title: "Inventários em Cartório",
+        desc: "Preparamos toda a organização dos papéis para que a partilha amigável ocorra perante o cartório com agilidade."
       }
     ],
-    timelineTitle: "Como funciona o nosso atendimento",
-    timelineDescription: "Seguimos procedimentos de absoluto sigilo e discrição profissional para conduzir e orientar o seu caso com total respeito.",
+    timelineTitle: "Etapas do atendimento consultivo",
+    timelineDescription: "Seguimos procedimentos de absoluto sigilo e ética profissional para orientar o seu caso com total respeito às suas particularidades.",
     timelineSteps: [
       {
-        title: "Agendamento por WhatsApp ou E-mail",
-        desc: "Você entra em contato e agenda uma orientação inicial de forma rápida e segura."
+        title: "Agendamento Inicial",
+        desc: "Você inicia o contato por e-mail ou mandando mensagem rápida em nosso número de WhatsApp de forma protegida."
       },
       {
-        title: "Descrição do seu Caso",
-        desc: "Você descreve as principais características do contrato, cobrança ou inventário de bens."
+        title: "Apresentação do Problema",
+        desc: "Você nos descreve como foi firmado o acerto, se há documentos escritos assinados ou conversas guardadas."
       },
       {
-        title: "Exame das Condições",
-        desc: "Fazemos uma leitura preliminar dos termos expostos para entender como a legislação civil trata da situação apresentada."
+        title: "Verificação Legal",
+        desc: "Estudamos o contrato apresentado para verificar como as leis civis e de consumo tratam a sua situação específica."
       },
       {
-        title: "Recomendação de Passos",
-        desc: "Explicamos de forma direta se o melhor caminho envolve termos amigáveis, notificação extrajudicial ou outras medidas adequadas."
+        title: "Orientações e Passos",
+        desc: "Explicamos de forma direta se o melhor caminho envolve termos amigáveis, notificação extrajudicial ou acertos de quitação."
       }
     ],
-    faqSectionTitle: "Dúvidas comuns respondidas de forma simples",
+    faqSectionTitle: "Dúvidas frequentes sobre contratos, acordos e bens",
     faqs: [
       {
-        q: "Quais são as regras para que um inventário familiar possa ser feito de forma rápida em cartório?",
-        a: "Para viabilizar o inventário extrajudicial diretamente em cartório, é exigido por lei que todos os herdeiros sejam plenamente capazes, de maior idade e estejam em perfeito acordo amigável com a divisão (consenso). Não deve haver testamento ativo, e a representação por advogada é um requisito obrigatório."
+        q: "Quais os requisitos reais para realizar um inventário de bens diretamente em cartório?",
+        a: "Para viabilizar o inventários extrajudicial diretamente em tabelionato de notas, é exigido por lei que todos os herdeiros sejam maiores, plenamente capazes e estejam em completo consenso sobre a divisão amigável dos bens. Não deve haver testamento ativo, e a representação de advogado(a) é obrigatória por lei."
       },
       {
-        q: "Tive meu nome inscrito indevidamente no SPC/SERASA por um erro. Eu tenho direito a reparação?",
-        a: "Sim. A inscrição injustificada de uma pessoa em cadastros de inadimplentes, seja por serviço não contratado, erro de portabilidade ou falta de notificação de cobrança, constitui prática ilegal passível de ensejar a suspensão do registro e eventual reparação civil."
+        q: "Meu nome foi incluído incorretamente em cadastros de restrição ao crédito. O que posso fazer?",
+        a: "A inclusão indevida nos cadastros do SPC/Serasa, motivada por faturas pagas, erro de portabilidade ou falta de aviso antecipado, constitui prática passível de remoção do registro restritivo e eventual pedido de indenização civil por danos morais."
       },
       {
-        q: "Quais os principais riscos de usar modelos genéricos e prontos de contratos baixados da internet?",
-        a: "Modelos pré-formatados retirados da internet costumam omitir obrigações essenciais do acordo real, utilizam artigos de leis que já foram modificados e não estipulam multas válidas. Um contrato feito sob medida analisa as suas reais necessidades e previne desentendimentos."
+        q: "Por que não é recomendado assinar acordos e contratos usando apenas modelos prontos de internet?",
+        a: "Os modelos genéricos baixados na internet omitem cláusulas de segurança vitais, utilizam artigos de lei defasados ou revogados e não tratam dos riscos pontuais do seu negócio real. Um contrato personalizado delimita com clareza os limites e deveres, evitando discussões penosas."
       },
       {
-        q: "Como a notificação extrajudicial ajuda a resolver um descumprimento de acordo?",
-        a: "Ela serve para dar ciência formal ao devedor de maneira amigável, estabelecendo prazos definitivos para regularização e constituindo mora legal. É um instrumento pacífico e persuasivo para abrir negociação sem precisar envolver a Justiça."
+        q: "Como a notificação extrajudicial ajuda a resolver um descumprimento de acordo sem envolver o juiz?",
+        a: "A notificação extrajudicial é um documento oficial enviado por escrito ao devedor. Ela formaliza a existência da pendência financeira de forma indiscutível, concede um prazo razoável para acerto amigável e indica as consequências do não pagamento, possuindo altíssima eficácia na composição de acordos de forma barata e rápida."
       },
       {
-        q: "O atendimento de análise inicial de um contrato pode ser realizado à distância?",
-        a: "Perfeitamente. Através de canais eletrônicos ou WhatsApp, você pode compartilhar imagens de contratos e nos descrever o problema para que façamos a análise preliminar fática e jurídica com total sigilo e proteção das suas informações."
+        q: "A avaliação de riscos de um contrato de compra e venda imobiliária pode ser feita de forma remota?",
+        a: "Com certeza. Através de canais digitais e com total segurança, você pode encaminhar imagens nítidas das folhas do seu contrato para que analisemos suas cláusulas sob reserva profissional antes de você efetuar sua assinatura."
       }
     ],
     formSubjects: [
