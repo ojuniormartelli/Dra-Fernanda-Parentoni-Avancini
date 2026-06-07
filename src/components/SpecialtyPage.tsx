@@ -338,8 +338,12 @@ const SPECIALTIES_COPIES: Record<Exclude<PageId, 'home'>, CustomSpecialtyData> =
 };
 
 export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHome, onToggleMode }: SpecialtyPageProps) {
-  // Gracefully fall back to 'trabalhista' if home happens to be active or unsupported id occurs
-  const activeKey = (specialtyId === 'home' || !SPECIALTIES_COPIES[specialtyId]) ? 'trabalhista' : specialtyId;
+  // Robust and clean key resolution to ensure proper specialty formatting and content loading
+  const activeKey: 'trabalhista' | 'previdenciario' | 'civel' = (() => {
+    if (specialtyId === 'previdenciario') return 'previdenciario';
+    if (specialtyId === 'civel') return 'civel';
+    return 'trabalhista';
+  })();
   const copy: CustomSpecialtyData = SPECIALTIES_COPIES[activeKey];
   
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
