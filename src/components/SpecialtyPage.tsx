@@ -520,10 +520,6 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
               {copy.ctaPrincipalText || "Solicitar Atendimento por E-mail"}
             </button>
           </div>
-
-          <p className="text-[11px] text-lux-text-muted font-light pt-2">
-            Atendimento em Itapira, região e de forma digital, com garantia de absoluto sigilo profissional e privacidade.
-          </p>
         </div>
       </section>
 
@@ -684,87 +680,6 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
         </div>
       </section>
 
-      {/* 
-        ============================================================
-        7. ABOUT DRA. FERNANDA & THE OFFICE (SOBRE A ADVOGADA E O ESCRITÓRIO)
-        Built specifically to avoid duplications while serving as heavy credit element.
-        ============================================================
-      */}
-      <section className="py-16 md:py-24 bg-lux-bg border-b border-lux-border relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[radial-gradient(ellipse_at_center,rgba(197,160,89,0.02),transparent)] pointer-events-none" />
-        <div className="max-w-[1100px] mx-auto px-5 relative z-10">
-          <div className="grid md:grid-cols-12 gap-8 lg:gap-12 items-center">
-            
-            <div className="md:col-span-5 flex justify-center">
-              <div className="relative group">
-                <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-gold-brand to-gold-dark opacity-20 blur-lg transition duration-1000 group-hover:opacity-30 pointer-events-none" />
-                <div className="relative w-64 h-80 sm:w-72 sm:h-96 rounded-2xl border border-lux-border bg-lux-panel overflow-hidden">
-                  <img
-                    src="/images/fernanda_avancini_office_1780499722468.png"
-                    alt="Dra. Fernanda Parentoni Avancini — Advogada"
-                    referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover grayscale brightness-95 hover:grayscale-0 transition-all duration-500"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="md:col-span-7 space-y-6">
-              <span className="text-[10px] uppercase tracking-widest font-bold text-gold-brand block">CONDUÇÃO PROFISSIONAL</span>
-              <h2 className="text-2xl md:text-3xl font-light text-lux-text-primary tracking-tight">
-                Atendimento com clareza, seriedade e atenção ao seu caso
-              </h2>
-              <div className="h-0.5 w-12 bg-gold-brand" />
-              
-              <p className="text-sm md:text-base text-lux-text-secondary leading-relaxed font-light">
-                A Dra. Fernanda Parentoni Avancini atua com foco em orientação jurídica cuidadosa, comunicação clara e análise individual de cada situação de fato apresentada. O atendimento integrado preza por profundo respeito ético e dedicação atenta aos seus interesses.
-              </p>
-
-              {/* 4 Trust points in card margins */}
-              <div className="grid sm:grid-cols-2 gap-4 pt-4 border-t border-lux-border/50">
-                <div className="space-y-1.5">
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-lux-text-primary flex items-center space-x-1.5">
-                    <span className="w-1 h-3.5 bg-gold-brand rounded" />
-                    <span>Atendimento próximo</span>
-                  </h4>
-                  <p className="text-[11px] leading-relaxed text-lux-text-secondary font-light">
-                    Cada atendimento é conduzido de forma próxima, com paciência e escuta realmente atenta ao seu contexto de vida.
-                  </p>
-                </div>
-                <div className="space-y-1.5">
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-lux-text-primary flex items-center space-x-1.5">
-                    <span className="w-1 h-3.5 bg-gold-brand rounded" />
-                    <span>Comunicação acessível</span>
-                  </h4>
-                  <p className="text-[11px] leading-relaxed text-lux-text-secondary font-light">
-                    Exposição perfeitamente transparente. Sem jargões técnicos excessivos ou juridiquês que impedem a real compreensão de seus direitos.
-                  </p>
-                </div>
-                <div className="space-y-1.5">
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-lux-text-primary flex items-center space-x-1.5">
-                    <span className="w-1 h-3.5 bg-gold-brand rounded" />
-                    <span>Análise individual</span>
-                  </h4>
-                  <p className="text-[11px] leading-relaxed text-lux-text-secondary font-light">
-                    Cada caso possui circunstâncias fáticas próprias. Não aplicamos fórmulas prontas, moldando a atuação aos detalhes documentados.
-                  </p>
-                </div>
-                <div className="space-y-1.5">
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-lux-text-primary flex items-center space-x-1.5">
-                    <span className="w-1 h-3.5 bg-gold-brand rounded" />
-                    <span>Clareza e Seriedade</span>
-                  </h4>
-                  <p className="text-[11px] leading-relaxed text-lux-text-secondary font-light">
-                    Orientamos você com honestidade técnica de acordo com as reais premissas de lei, agindo em constante conformidade com o código da OAB.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
       {/* SHORT TRUST BLOCK FOR THE FIRM - EXCLUSIVELY REINFORCING CREDIBILITY */}
       <section className="py-16 bg-lux-panel border-b border-lux-border relative overflow-hidden">
         <div className="max-w-[850px] mx-auto px-5 text-center relative z-10 space-y-6">
@@ -859,11 +774,6 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
                   <span>{copy.finalCtaButtonText || "FALAR PELO WHATSAPP"}</span>
                 </button>
               </div>
-
-              <div className="flex items-center space-x-2 text-lux-text-muted justify-center md:justify-start pt-1">
-                <ShieldCheck className="w-4 h-4 text-gold-brand" />
-                <span className="text-[10px] font-light">Seu e-mail e informações estão sob absoluto sigilo em nosso banco.</span>
-              </div>
             </div>
 
             <div className="md:col-span-7 bg-lux-bg border border-lux-border p-6 md:p-8 rounded-2xl shadow-xl">
@@ -949,7 +859,7 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
                     onChange={(e) => setMessage(e.target.value)}
                     placeholder="Descreva brevemente sua situação."
                     className="w-full px-3.5 py-2.5 rounded-xl bg-lux-panel border border-lux-border focus:border-gold-brand focus:outline-none focus:ring-1 focus:ring-gold-brand text-xs md:text-sm font-light text-lux-text-primary transition-all resize-none"
-                  ></textarea>
+                  />
                 </div>
 
                 <button
