@@ -529,12 +529,12 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
 
       {/* 
         ============================================================
-        2. COMPREHENSIVE SERVICE INTRODUCTION (O QUE A ÁREA RESOLVE)
+        2. INTRODUÇÃO
         ============================================================
       */}
       <section className="py-16 bg-lux-panel border-b border-lux-border relative overflow-hidden">
         <div className="max-w-[850px] mx-auto px-5 text-center relative z-10 space-y-6">
-          <span className="text-[10px] uppercase tracking-widest font-bold text-gold-brand block">PROPÓSITO SOCIAL E JURÍDICO</span>
+          <span className="text-[10px] uppercase tracking-widest font-bold text-gold-brand block">INTRODUÇÃO</span>
           <div className="max-w-3xl mx-auto space-y-4">
             <h2 className="title-serif text-2xl md:text-3xl font-light text-lux-text-primary tracking-tight">
               Entenda como funciona o suporte em <span className="italic text-gold-brand">{copy.tagline}</span>
@@ -549,13 +549,33 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
 
       {/* 
         ============================================================
-        3. MOST COMMON SITUATIONS (SITUAÇÕES MAIS COMUNS)
+        3. BLOCO — QUANDO BUSCAR ORIENTAÇÃO
         ============================================================
       */}
       <section className="py-16 md:py-24 bg-lux-bg border-b border-lux-border relative">
+        <div className="max-w-[850px] mx-auto px-5 text-center relative z-10 space-y-6">
+          <span className="text-[10px] uppercase tracking-widest font-bold text-gold-brand block">QUANDO BUSCAR ORIENTAÇÃO</span>
+          <div className="max-w-3xl mx-auto space-y-4">
+            <h2 className="title-serif text-2xl md:text-3xl font-light text-lux-text-primary tracking-tight">
+              {copy.notForWhomTitle || "Quando a orientação jurídica pode ser importante"}
+            </h2>
+            <div className="h-0.5 w-12 bg-gold-brand mx-auto" />
+            <p className="text-sm md:text-base text-lux-text-secondary leading-relaxed font-light max-w-3xl mx-auto">
+              {copy.notForWhomDescription}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 
+        ============================================================
+        4. BLOCO — SITUAÇÕES COMUNS
+        ============================================================
+      */}
+      <section className="py-16 md:py-24 bg-lux-panel border-b border-lux-border relative">
         <div className="max-w-[1250px] mx-auto px-5 md:px-8 xl:px-0">
           <div className="text-center max-w-2xl mx-auto mb-12 space-y-4">
-            <span className="text-xs uppercase tracking-widest font-bold text-gold-brand block">SITUAÇÕES DO DIA A DIA</span>
+            <span className="text-xs uppercase tracking-widest font-bold text-gold-brand block">SITUAÇÕES COMUNS</span>
             <h2 className="text-2xl md:text-3xl font-light text-lux-text-primary tracking-tight">
               {copy.situationsTitle}
             </h2>
@@ -564,7 +584,7 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {copy.situations.map((situation, idx) => (
-              <div key={idx} className="p-5 rounded-xl bg-lux-panel border border-lux-border flex items-start space-x-3.5 hover:border-gold-brand/35 transition-all duration-300">
+              <div key={idx} className="p-5 rounded-xl bg-lux-bg border border-lux-border flex items-start space-x-3.5 hover:border-gold-brand/35 transition-all duration-300">
                 <span className="flex-shrink-0 w-6 h-6 rounded-md bg-yellow-500/10 text-yellow-400 text-xs flex items-center justify-center font-bold mt-0.5">!</span>
                 <p className="text-xs md:text-sm text-lux-text-secondary leading-relaxed font-light">{situation}</p>
               </div>
@@ -573,7 +593,7 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
 
           <div className="text-center pt-10">
             <p className="text-xs md:text-sm text-lux-text-muted font-light max-w-2xl mx-auto italic mb-6">
-              Cada situação descrita acima exige verificação cuidada das provas documentais de acordo com suas particularidades contratuais.
+              Cada situação descrita acima exige verificação de acordo com as particularidades de cada caso concreto.
             </p>
             
             <button
@@ -581,7 +601,7 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
               className="inline-flex px-7 py-3.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-emerald-500 hover:bg-emerald-400 text-white transition-all shadow-lg shadow-emerald-500/10 items-center justify-center space-x-2 cursor-pointer hover:scale-102"
             >
               <MessageSquare className="w-4 h-4 text-white" />
-              <span>SOLICITAR ANÁLISE DETALHADA DO MEU CASO</span>
+              <span>SOLICITAR ANÁLISE DO CASO</span>
             </button>
           </div>
         </div>
@@ -589,131 +609,63 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
 
       {/* 
         ============================================================
-        4. WHO IS THIS PAGE FOR / NOT FOR (PARA QUEM É / QUANDO NÃO É)
+        5. BLOCO — PARA QUEM É INDICADA
         ============================================================
       */}
-      <section className="py-16 md:py-24 bg-lux-panel border-b border-lux-border">
-        <div className="max-w-[1200px] mx-auto px-5 md:px-8 xl:px-0">
-          <div className="grid lg:grid-cols-12 gap-12 items-start">
-            
-            {/* Suitable audience (Para quem serve) */}
-            <div className="lg:col-span-7 space-y-6">
-              <span className="text-[10px] uppercase tracking-widest font-bold text-gold-brand block">PÚBLICO-ALVO</span>
-              <h2 className="text-2xl md:text-3xl font-light text-lux-text-primary tracking-tight">
-                {copy.forWhomTitle || "Para quem esta página pode ser útil"}
-              </h2>
-              <div className="h-0.5 w-12 bg-gold-brand" />
-              <p className="text-sm md:text-base text-lux-text-secondary leading-relaxed font-light">
-                {copy.forWhomDescription}
-              </p>
-
-              {copy.forWhomItems && copy.forWhomItems.length > 0 && (
-                <div className="space-y-4 pt-4">
-                  {copy.forWhomItems.map((item, idx) => (
-                    <div key={idx} className="flex items-start space-x-3">
-                      <div className="w-5.5 h-5.5 rounded-full bg-gold-brand/10 border border-gold-brand/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <CheckCircle className="w-3 h-3 text-gold-brand" />
-                      </div>
-                      <p className="text-xs md:text-sm text-lux-text-primary font-light leading-relaxed">{item}</p>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Unsuitable scenario disclaimer (Para quem NÃO serve as a boundary) */}
-            <div className="lg:col-span-5 bg-lux-bg border border-lux-border/60 p-6 md:p-8 rounded-2xl relative overflow-hidden self-stretch flex flex-col justify-between">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gold-brand/[0.015] rounded-full blur-2xl pointer-events-none" />
-              <div className="space-y-5">
-                <span className="text-[10px] uppercase tracking-widest font-bold text-lux-text-muted block">
-                  {copy.notForWhomTitle?.includes("importante") ? "DIREITOS" : "RESTRIÇÃO DE FOCO"}
-                </span>
-                <h3 className="text-lg md:text-xl font-light text-lux-text-primary tracking-tight">
-                  {copy.notForWhomTitle || "Quando nossa orientação não é a ideal"}
-                </h3>
-                <div className="h-[1px] w-full bg-lux-border/40" />
-                <p className="text-xs md:text-sm text-lux-text-secondary leading-relaxed font-light">
-                  {copy.notForWhomDescription}
-                </p>
-              </div>
-
-              <div className="pt-8 mt-auto">
-                <button
-                  onClick={handleWhatsappCTA}
-                  className="w-full py-3 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/20 rounded-full text-xs font-semibold uppercase tracking-widest flex items-center justify-center space-x-2 cursor-pointer transition-colors"
-                >
-                  <MessageSquare className="w-3.5 h-3.5 text-emerald-400" />
-                  <span>{(copy.ctaSecundarioText || "Falar com a advogada").toUpperCase()}</span>
-                </button>
-              </div>
-            </div>
-
+      <section className="py-16 md:py-24 bg-lux-bg border-b border-lux-border relative">
+        <div className="max-w-[850px] mx-auto px-5 text-center relative z-10 space-y-6">
+          <span className="text-[10px] uppercase tracking-widest font-bold text-gold-brand block">PÚBLICO-ALVO</span>
+          <div className="max-w-3xl mx-auto space-y-4">
+            <h2 className="title-serif text-2xl md:text-3xl font-light text-lux-text-primary tracking-tight">
+              {copy.forWhomTitle}
+            </h2>
+            <div className="h-0.5 w-12 bg-gold-brand mx-auto" />
+            <p className="text-sm md:text-base text-lux-text-secondary leading-relaxed font-light max-w-3xl mx-auto">
+              {copy.forWhomDescription}
+            </p>
           </div>
         </div>
       </section>
 
       {/* 
         ============================================================
-        5. HOW THE ATTORNEY CAN HELP (COMO A DRA. FERNANDA PODE AJUDAR)
+        6. BLOCO — COMO O ATENDIMENTO É CONDUZIDO
         ============================================================
       */}
-      <section className="py-16 md:py-24 bg-lux-bg border-b border-lux-border">
-        <div className="max-w-[1000px] mx-auto px-5 md:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-10 space-y-4">
-            <span className="text-xs uppercase tracking-widest font-bold text-gold-brand block">MÉTODO DE SUPORTE</span>
-            <h2 className="text-2xl md:text-3xl font-light text-lux-text-primary tracking-tight">
+      <section className="py-16 md:py-24 bg-lux-panel border-b border-lux-border relative">
+        <div className="max-w-[850px] mx-auto px-5 text-center relative z-10 space-y-6">
+          <span className="text-[10px] uppercase tracking-widest font-bold text-gold-brand block">COMO O ATENDIMENTO É CONDUZIDO</span>
+          <div className="max-w-3xl mx-auto space-y-4">
+            <h2 className="title-serif text-2xl md:text-3xl font-light text-lux-text-primary tracking-tight">
               {copy.howWeHelpTitle}
             </h2>
             <div className="h-0.5 w-12 bg-gold-brand mx-auto" />
+            <p className="text-sm md:text-base text-lux-text-secondary leading-relaxed font-light max-w-3xl mx-auto">
+              {copy.howWeHelpSubtitle}
+            </p>
           </div>
-
-          <p className="text-sm md:text-base text-lux-text-secondary leading-relaxed font-light text-center max-w-3xl mx-auto mb-12">
-            {copy.howWeHelpSubtitle}
-          </p>
-
-          {copy.howWeHelp && copy.howWeHelp.length > 0 && (
-            <div className="grid sm:grid-cols-2 gap-6 pt-2">
-              {copy.howWeHelp.map((helpItem, idx) => (
-                <div key={idx} className="p-6 rounded-xl bg-lux-panel border border-lux-border hover:border-gold-brand/20 transition-all duration-300 flex items-start space-x-4">
-                  <div className="w-8 h-8 rounded-full bg-gold-brand/10 border border-gold-brand/20 flex items-center justify-center shrink-0 mt-0.5">
-                    <CheckCircle className="w-4 h-4 text-gold-brand" />
-                  </div>
-                  <div className="space-y-1.5">
-                    <h4 className="text-sm md:text-base text-lux-text-primary font-medium">{helpItem.title}</h4>
-                    <p className="text-xs md:text-sm text-lux-text-secondary font-light leading-relaxed">{helpItem.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
         </div>
       </section>
 
       {/* 
         ============================================================
-        6. STEP-BY-STEP ADVISORY (COMO FUNCIONA O ATENDIMENTO)
+        7. BLOCO — ETAPAS DO ATENDIMENTO
         ============================================================
       */}
-      <section className="py-16 md:py-24 bg-lux-panel border-b border-lux-border">
+      <section className="py-16 md:py-24 bg-lux-bg border-b border-lux-border">
         <div className="max-w-[850px] mx-auto px-5">
           <div className="text-center max-w-2xl mx-auto mb-10 space-y-4">
-            <span className="text-xs uppercase tracking-widest font-bold text-gold-brand block">PROCESSO SEGURO</span>
+            <span className="text-xs uppercase tracking-widest font-bold text-gold-brand block">ETAPAS DO ATENDIMENTO</span>
             <h2 className="text-2xl md:text-3xl font-light text-lux-text-primary tracking-tight">
               {copy.timelineTitle}
             </h2>
             <div className="h-0.5 w-12 bg-gold-brand mx-auto" />
           </div>
 
-          {copy.timelineDescription && (
-            <p className="text-sm md:text-base text-lux-text-secondary leading-relaxed font-light text-center max-w-3xl mx-auto mb-12">
-              {copy.timelineDescription}
-            </p>
-          )}
-
           <div className="space-y-8 relative pl-2 max-w-2xl mx-auto">
             {copy.timelineSteps.map((step, idx) => (
               <div key={idx} className="flex gap-6 items-start relative group">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-lux-bg border border-gold-brand/40 text-gold-brand text-xs font-bold flex items-center justify-center shadow-md">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-lux-panel border border-gold-brand/40 text-gold-brand text-xs font-bold flex items-center justify-center shadow-md">
                   {idx + 1}
                 </div>
                 <div className="space-y-1">
