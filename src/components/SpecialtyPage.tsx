@@ -35,307 +35,305 @@ interface CustomSpecialtyData {
   faqs: { q: string; a: string }[];
   formSubjects: string[];
   defaultSubject: string;
+  // Optional areas for custom section headers & LP/Institutional variations
+  heroHeadlineLP?: string;
+  heroDescriptionLP?: string;
+  ctaPrincipalText?: string;
+  ctaSecundarioText?: string;
+  forWhomTitle?: string;
+  notForWhomTitle?: string;
+  trustBlockTitle?: string;
+  trustBlockText?: string;
+  finalCtaTitle?: string;
+  finalCtaText?: string;
+  finalCtaButtonText?: string;
+  formSupportText?: string;
 }
 
 const SPECIALTIES_COPIES: Record<Exclude<PageId, 'home'>, CustomSpecialtyData> = {
   trabalhista: {
     tagline: "Direito do Trabalho",
     heroBadge: "ORIENTAÇÃO AO TRABALHADOR",
-    heroHeadline: "Tem dúvidas sobre seu acerto de rescisão ou acredita que seus direitos de trabalho não foram pagos corretamente? Esclareça sua situação de forma humana, clara e segura.",
-    heroDescription: "Seja para conferir os cálculos de sua demissão, tirar dúvidas sobre horas extras acumuladas ou entender como funciona a rescisão devido a falhas do empregador, conte com nossa análise individual e confidencial.",
-    resolutionDescription: "O ambiente de trabalho deve ser pautado pela correção e pelo respeito mútuo. Auxiliamos você a entender cada detalhe da sua relação profissional, revisando detalhadamente as verbas da sua rescisão, horas cumpridas, intervalos e o registro correto da carteira de trabalho, priorizando sempre um diálogo transparente e sem termos complicados.",
-    situationsTitle: "Situações reais do dia a dia no trabalho que analisamos com você",
+    heroHeadline: "Orientação jurídica em Direito do Trabalho com análise clara e atendimento individualizado",
+    heroDescription: "Se você está com dúvidas sobre verbas rescisórias, horas extras, FGTS, vínculo de emprego, assédio ou outras situações no trabalho, o primeiro passo é entender com clareza o que aconteceu e quais caminhos jurídicos podem ser avaliados no seu caso.",
+    heroHeadlineLP: "Está com dúvidas sobre um problema no trabalho?",
+    heroDescriptionLP: "Verbas rescisórias, FGTS, horas extras, vínculo de emprego, assédio e outras situações podem exigir análise jurídica individual. Entenda melhor o seu caso com orientação clara e atendimento responsável.",
+    ctaPrincipalText: "Solicitar análise do caso",
+    ctaSecundarioText: "Conversar pelo WhatsApp",
+    resolutionDescription: "Questões trabalhistas costumam surgir em momentos de insegurança. Em muitos casos, o trabalhador sabe que algo pode estar errado, mas não tem certeza sobre quais direitos podem ser analisados ou qual é a melhor forma de buscar orientação. O atendimento jurídico começa com escuta, análise dos documentos e avaliação individual da situação.",
+    situationsTitle: "Situações trabalhistas que podem ser analisadas",
     situations: [
-      "Conferência detalhada e cálculo de todos os valores apresentados no termo de rescisão de contrato",
-      "Horas extras cumpridas na rotina que não foram devidamente compensadas ou pagas pela empresa",
-      "Atividade continuada com horários e subordinação direta sem que tenha sido feito o registro em carteira",
-      "Atrasos recorrentes no pagamento mensal dos salários ou ausência de depósitos na conta do FGTS",
-      "Exercício frequente de funções diferentes ou acúmulo de tarefas além do acordado no contrato",
-      "Dúvidas claras sobre as regras e o cabimento legal de demissões sob justificativa de justa causa",
-      "Ausência de pagamento de adicionais garantidos em lei, como de periculosidade, insalubridade ou noturno",
-      "Exposição a cobranças excessivas, tratamento inadequado ou constrangimentos na empresa (assédio moral)",
-      "Orientações seguras sobre o pedido de rescisão indireta quando o empregador descumpre as regras do contrato"
+      "Verbas rescisórias pagas de forma incompleta ou com dúvida sobre os valores",
+      "Falta de depósito de FGTS ou irregularidades nos recolhimentos",
+      "Horas extras não pagas corretamente",
+      "Situação de vínculo de emprego sem registro formal",
+      "Rescisão indireta em casos de falta grave do empregador",
+      "Assédio moral ou situações de constrangimento no ambiente de trabalho",
+      "Acidente de trabalho e seus desdobramentos",
+      "Alterações indevidas de função, jornada, salário ou condições de trabalho"
     ],
-    forWhomDescription: "Esta orientação jurídica informativa destina-se a trabalhadores, prestadores e ex-colaboradores que buscam clareza sobre suas condições contratuais ou que enfrentam impasses no acerto de contas.",
-    forWhomItems: [
-      "Trabalhadores recentemente desligados que desejam conferir a exatidão das verbas rescisórias recebidas.",
-      "Profissionais submetidos a jornadas extensas recorrentes que querem verificar se o banco de horas está regular.",
-      "Prestadores de serviço sem registro em carteira que precisam avaliar se preenchem os critérios do vínculo empregatício.",
-      "Pessoas expostas a atividades nocivas à saúde que buscam esclarecimentos sobre adicionais não pagos."
-    ],
-    notForWhomDescription: "Nossa atuação informativa foca exclusivamente no trabalhador enquanto pessoa física, oferecendo análise personalizada para cada histórico. Não prestamos assessoria ou defesa a redes de grandes corporações ou marcas envolvidas em litígios institucionais.",
-    howWeHelpTitle: "Como o escritório auxilia no seu caso",
-    howWeHelpSubtitle: "Avaliamos suas dúvidas de maneira atenta e descomplicada, traduzindo as previsões da lei para que você entenda sua situação real de forma amigável e segura.",
-    howWeHelp: [
-      {
-        title: "Leitura do Histórico",
-        desc: "Análise cuidadosa da sua rotina de trabalho para verificar o que de fato aconteceu no dia a dia da sua atividade."
-      },
-      {
-        title: "Esclarecimento Direto",
-        desc: "Explicação em tom simples e acessível das regras aplicáveis ao seu setor e Convenção Coletiva de Trabalho."
-      },
-      {
-        title: "Conferência Documental",
-        desc: "Exame minucioso de recibos, extratos de FGTS, folhas de ponto e carteira para apontar incorreções em valores."
-      },
-      {
-        title: "Caminhos Consensuais",
-        desc: "Direcionamento focado em atitudes corretas e éticas, priorizando caminhos amigáveis que evitem discussões judiciais desgastantes."
-      }
-    ],
-    timelineTitle: "Etapas do atendimento informativo",
-    timelineDescription: "Projetamos um fluxo de contato simples, pautado pela mútua confiança, respeito ao sigilo das suas informações e total discrição.",
+    forWhomTitle: "Para quem esta página é indicada",
+    forWhomDescription: "Esta página é indicada para trabalhadores que desejam entender melhor a própria situação antes de tomar uma decisão. Também é útil para quem já reuniu documentos, recebeu uma rescisão, enfrentou problemas durante o vínculo de trabalho ou busca orientação jurídica mais clara sobre o caso.",
+    forWhomItems: [],
+    notForWhomTitle: "Quando a orientação jurídica pode ser importante",
+    notForWhomDescription: "A orientação jurídica pode ser útil quando há dúvidas sobre a regularidade da relação de trabalho, da rescisão do contrato ou do pagamento de valores ligados ao vínculo empregatício. Também pode ser importante quando a situação envolve desgaste no ambiente profissional, alteração indevida das condições de trabalho ou dificuldade para reunir documentos e entender os próximos passos.",
+    howWeHelpTitle: "Como o atendimento é conduzido",
+    howWeHelpSubtitle: "Cada situação exige análise individual. O atendimento parte da escuta do relato, da verificação dos documentos disponíveis e da avaliação jurídica do caso concreto. A partir disso, o escritório orienta sobre os caminhos possíveis, sempre com clareza, responsabilidade e atenção às particularidades de cada atendimento.",
+    howWeHelp: [],
+    timelineTitle: "Como funciona o atendimento",
+    timelineDescription: "",
     timelineSteps: [
       {
-        title: "Início de Conversa",
-        desc: "Você entra em contato conosco por mensagem direta no WhatsApp ou enviando o formulário de e-mail deste site."
+        title: "Entendimento inicial da situação apresentada",
+        desc: ""
       },
       {
-        title: "Apresentação de Perguntas",
-        desc: "Você descreve as suas principais dúvidas, o tempo de trabalho na empresa e as tarefas reais que desempenhava."
+        title: "Análise dos documentos disponíveis",
+        desc: ""
       },
       {
-        title: "Organização dos Papéis",
-        desc: "Auxiliamos você a identificar quais documentos são necessários (como carteira, recibos e conversas) para analisar seu histórico."
+        title: "Orientação jurídica sobre os caminhos possíveis",
+        desc: ""
       },
       {
-        title: "Balanço e Esclarecimento",
-        desc: "Com as informações organizadas, explicamos de forma transparente os seus reais direitos previstos em lei."
+        title: "Esclarecimento de dúvidas sobre o caso e sobre o atendimento",
+        desc: ""
+      },
+      {
+        title: "Definição dos próximos passos, quando cabível",
+        desc: ""
       }
     ],
-    faqSectionTitle: "Perguntas frequentes sobre direitos do trabalhador",
+    trustBlockTitle: "Atendimento com seriedade, discrição e clareza",
+    trustBlockText: "Em questões trabalhistas, muitas pessoas chegam ao atendimento sem saber exatamente por onde começar. Por isso, a proposta do escritório é oferecer uma análise cuidadosa, comunicação clara e acompanhamento responsável, sempre com atenção às circunstâncias reais de cada caso.",
+    faqSectionTitle: "Perguntas frequentes",
     faqs: [
       {
-        q: "Qual é o tempo limite para buscar os meus direitos de trabalho na Justiça?",
-        a: "A legislação estabelece que o trabalhador tem o prazo de até 2 anos após o término do contrato de trabalho para propor uma ação judicial. Nesse caso, é permitido requerer os direitos não pagos dos últimos 5 anos de contratação. Decorrido o prazo de 2 anos, perde-se o direito de reivindicar."
+        q: "Preciso ter todos os documentos para buscar orientação?",
+        a: "Não necessariamente. Os documentos ajudam na análise, mas a orientação inicial também pode começar a partir do relato da situação e da verificação do que já está disponível."
       },
       {
-        q: "Trabalhei vários meses sem carteira assinada. Eu perco as minhas garantias legais?",
-        a: "Não. Na relação de trabalho, o que vale é a prática do dia a dia. Se você prestava serviços de forma contínua, pessoal, sob ordens e mediante salário, os critérios do vínculo estão presentes e o registro deve ser formalizado para garantir o recebimento de férias, 13º e FGTS."
+        q: "Quem foi demitido sempre tem direito a receber valores adicionais?",
+        a: "Cada caso precisa ser analisado individualmente. A existência de diferenças a receber depende do histórico da relação de trabalho, da forma de desligamento e da documentação envolvida."
       },
       {
-        q: "Como posso comprovar que fazia horas extras se o registro de ponto era preenchido de forma errada?",
-        a: "A jornada extra de trabalho pode ser demonstrada por outras provas além dos cartões de ponto, como conversas de WhatsApp por escrito, e-mails enviados fora do horário do expediente, relatórios internos ou por depoimentos de testemunhas que acompanhavam a rotina."
+        q: "Quem trabalhou sem registro pode buscar orientação jurídica?",
+        a: "Sim. Situações sem registro formal podem ser analisadas juridicamente a partir das circunstâncias do caso e dos elementos disponíveis."
       },
       {
-        q: "O que é e como funciona a dispensa por rescisão indireta?",
-        a: "A rescisão indireta funciona como uma 'rescisão por culpa da empresa'. Quando o empregador comete falhas graves, como atrasar com frequência salários, não depositar o FGTS ou expor o colaborador a humilhações, o trabalhador pode solicitar o rompimento contratual recebendo todos os valores devidos na demissão sem justa causa."
+        q: "Posso tirar dúvidas antes de decidir se vou seguir com atendimento?",
+        a: "Sim. O objetivo do primeiro contato é justamente permitir uma compreensão inicial da situação e do formato de atendimento."
       },
       {
-        q: "A análise do meu caso e o envio de documentos podem ser feitos de forma online?",
-        a: "Sim. Para sua maior praticidade, o atendimento preliminar e o recebimento das imagens dos documentos ocorrem de forma digital, mantendo absoluto sigilo profissional sobre todos os seus dados."
+        q: "O atendimento é feito de forma individual?",
+        a: "Sim. Cada caso é analisado de forma individual, considerando documentos, contexto e necessidades específicas."
       }
     ],
     formSubjects: [
-      "Revisão e Conferência de Rescisão",
-      "Dúvidas sobre Horas Extras",
-      "Trabalho sem Carteira Registrada",
-      "Dúvidas sobre Demissão e Justa Causa",
-      "Problemas ou Constrangimentos na Empresa",
-      "Esclarecimentos sobre Rescisão Indireta",
-      "Outros Assuntos de Direito de Trabalho"
+      "Verbas Rescisórias / Acerto",
+      "Falta de Depósito de FGTS",
+      "Horas Extras",
+      "Vínculo de Trabalho sem Registro",
+      "Rescisão Indireta / Falta Grave",
+      "Assédio Moral / Ambiente de Trabalho",
+      "Acidente de Trabalho",
+      "Alterações Indevidas no Trabalho",
+      "Outro Assunto Trabalhista"
     ],
-    defaultSubject: "Revisão e Conferência de Rescisão"
+    defaultSubject: "Verbas Rescisórias / Acerto",
+    finalCtaTitle: "Se você precisa entender melhor sua situação trabalhista, o primeiro passo é uma análise clara do caso.",
+    finalCtaText: "",
+    finalCtaButtonText: "Falar com o escritório",
+    formSupportText: "Preencha os dados abaixo e descreva brevemente sua situação. O contato será analisado com atenção, e o retorno será feito pelos canais informados."
   },
   previdenciario: {
     tagline: "Direito Previdenciário",
     heroBadge: "PLANEJAMENTO E APOSENTADORIA",
-    heroHeadline: "Quer planejar seu momento de aposentadoria ou tem dificuldades com algum benefício do INSS? Entenda sua situação de forma clara, objetiva e sem termos difíceis.",
-    heroDescription: "Descubra qual é a regra de transição mais favorável para sua futura concessão de aposentadoria ou compreenda as alternativas legais em casos de pedidos negados ou suspensos pelo órgão previdenciário.",
-    resolutionDescription: "A decisão sobre o momento ideal para solicitar sua aposentadoria é definitiva para o seu sustento. Conduzimos a análise de todo o seu histórico de pagamentos, auxiliando você a corrigir pendências que atrasam a concessão, a entender as diferentes regras em vigor e a apresentar suas solicitações com o suporte adequado de quem entende do assunto.",
-    situationsTitle: "Situações comuns envolvendo o INSS que ajudamos a analisar de perto",
+    heroHeadline: "Orientação jurídica previdenciária com análise individual e explicação clara",
+    heroDescription: "Aposentadoria, benefícios por incapacidade, BPC/LOAS, revisão, vínculos e contribuições exigem análise cuidadosa. O atendimento jurídico ajuda a compreender melhor a situação e os caminhos que podem ser avaliados em cada caso.",
+    heroHeadlineLP: "Está com dúvidas sobre aposentadoria, benefício ou revisão?",
+    heroDescriptionLP: "A análise previdenciária deve considerar documentos, histórico contributivo e regras aplicáveis ao caso. Receba orientação clara para entender melhor a sua situação.",
+    ctaPrincipalText: "Solicitar análise do caso",
+    ctaSecundarioText: "Conversar pelo WhatsApp",
+    resolutionDescription: "Questões previdenciárias costumam gerar muitas dúvidas. Regras de aposentadoria, tempo de contribuição, vínculos no CNIS, indeferimentos e revisões exigem atenção aos detalhes. Por isso, a orientação jurídica começa com análise individual da situação, dos documentos e do histórico previdenciário apresentado.",
+    situationsTitle: "Situações previdenciárias que podem ser analisadas",
     situations: [
-      "Dúvidas de qual das cinco regras de transição pós-Reforma da Previdência trará a melhor renda para você",
-      "Pedidos de aposentadorias ou auxílios de saúde que foram indeferidos, negados ou suspensos pelo INSS",
-      "Necessidade de corrigir erros, vínculos de trabalho faltantes ou salários zerados no extrato oficial CNIS",
-      "Projeção de contribuições futuras para evitar recolher em valores incorretos ou em códigos inapropriados",
-      "Dúvidas quanto às exigências de renda e laudos para solicitar o Benefício de Prestação Continuada (BPC/LOAS)",
-      "Dificuldades em reunir documentos para comprovar tempos de atividade especial (insalubre), rural ou de pesca",
-      "Atraso recorrente do INSS na análise de pedidos ou na resposta formal de recursos administrativos",
-      "Orientações prévias e organização de documentos para a realização de perícias médicas da previdência",
-      "Análise de regras jurídicas para avaliar a possibilidade de requerer a revisão de aposentadoria já concedida"
+      "Dúvidas sobre aposentadoria e regras aplicáveis ao caso",
+      "Planejamento do melhor momento para requerer benefício",
+      "Benefício por incapacidade",
+      "BPC/LOAS",
+      "Indeferimento de benefício",
+      "Suspensão ou cessação de benefício",
+      "Revisão de benefício",
+      "Acerto de vínculos, contribuições ou informações no histórico previdenciário"
     ],
-    forWhomDescription: "Esta orientação jurídica informativa destina-se a segurados do INSS, profissionais liberais, autônomos e pessoas que necessitam de suporte em benefícios de saúde ou amparo da assistência social.",
-    forWhomItems: [
-      "Trabalhadores próximos de preencher a idade mínima ou o tempo de contribuição exigido por lei.",
-      "Pessoas com problemas de saúde duradouros que buscam analisar se atendem às exigências do auxílio por incapacidade.",
-      "Idosos em vulnerabilidade de renda ou pessoas com deficiência que pretendem compreender os critérios do LOAS.",
-      "Dependentes e cônjuges que buscam orientações para reunir os papéis exigidos no pedido de pensão por morte."
-    ],
-    notForWhomDescription: "Nossos esclarecimentos amparam exclusivamente o Regime Geral de Previdência Social (INSS) e amparos assistenciais (BPC). Dessa forma, não prestamos assessoria a fundações ou planos corporativos de previdência privada fechada.",
-    howWeHelpTitle: "Como realizamos sua análise previdenciária",
-    howWeHelpSubtitle: "Estudamos o seu tempo de contribuição com rigor técnico e cuidado, traduzindo as regras de pedágio e fatores de cálculo para que você compreenda tudo sem complicação.",
-    howWeHelp: [
-      {
-        title: "Correção do Extrato",
-        desc: "Examinamos o seu extrato de contribuições (CNIS) para apontar pendências de valores que possam prejudicar o seu cálculo."
-      },
-      {
-        title: "Cálculo de Regras",
-        desc: "Projetamos o seu histórico de trabalho nas novas regras da reforma, identificando qual alternativa trará menor redução financeira."
-      },
-      {
-        title: "Organização de Laudos",
-        desc: "Auxiliamos você a agrupar atestados médicos, receitas e exames de forma adequada para apresentar no dia da perícia."
-      },
-      {
-        title: "Suporte de Documentação",
-        desc: "Orientamos sobre as carteiras de trabalho antigas, contratos e certidões necessárias para que seu pedido corra sem exigências."
-      }
-    ],
-    timelineTitle: "Como funciona a conversa informativa",
-    timelineDescription: "Proporcionamos um contato acolhedor e simples, preservando inteiramente o sigilo profissional de suas informações desde o início.",
+    forWhomTitle: "Para quem esta página é indicada",
+    forWhomDescription: "Esta página é indicada para pessoas que desejam entender melhor sua situação previdenciária antes de tomar uma decisão. Também é útil para quem recebeu uma negativa, enfrenta dúvidas com documentos ou quer orientação mais segura sobre aposentadoria, benefício ou revisão.",
+    forWhomItems: [],
+    notForWhomTitle: "Quando a orientação jurídica pode ser importante",
+    notForWhomDescription: "A orientação jurídica pode ser importante quando há dúvida sobre o melhor momento para pedir aposentadoria, quando um benefício foi negado ou suspenso, quando existem inconsistências no histórico contributivo ou quando a pessoa precisa entender melhor as possibilidades relacionadas ao seu caso.",
+    howWeHelpTitle: "Como o atendimento é conduzido",
+    howWeHelpSubtitle: "Cada caso previdenciário exige análise própria. O atendimento parte do exame das informações disponíveis, dos documentos apresentados e das dúvidas trazidas pela pessoa atendida. A partir disso, o escritório orienta sobre os caminhos que podem ser avaliados com clareza, responsabilidade e atenção às particularidades do caso.",
+    howWeHelp: [],
+    timelineTitle: "Como funciona o atendimento",
+    timelineDescription: "",
     timelineSteps: [
       {
-        title: "Agendamento Prévio",
-        desc: "Você entra em contato enviando suas principais dúvidas pelo WhatsApp ou pelo canal de e-mail deste site."
+        title: "Entendimento inicial da situação previdenciária",
+        desc: ""
       },
       {
-        title: "Recebimento do Extrato",
-        desc: "Organizamos os seus dados, orientando você sobre como baixar o extrato CNIS no aplicativo oficial do órgão."
+        title: "Verificação dos documentos e das informações disponíveis",
+        desc: ""
       },
       {
-        title: "Exame do Histórico",
-        desc: "Estudamos suas datas de contribuição, idades atingidas e a existência de tempos especiais a serem convertidos."
+        title: "Análise jurídica do caso",
+        desc: ""
       },
       {
-        title: "Orientação e Direcionamento",
-        desc: "Apresentamos por escrito as melhores alternativas de lei para o seu caso, indicando quais as atitudes mais seguras."
+        title: "Esclarecimento das dúvidas principais",
+        desc: ""
+      },
+      {
+        title: "Orientação sobre os próximos passos, quando cabível",
+        desc: ""
       }
     ],
-    faqSectionTitle: "Perguntas de rotina sobre aposentadorias e auxílios",
+    trustBlockTitle: "Atendimento com clareza, cuidado e responsabilidade",
+    trustBlockText: "Em matéria previdenciária, decisões tomadas sem análise adequada podem gerar insegurança e dúvidas desnecessárias. Por isso, o atendimento é conduzido com atenção aos detalhes, explicação clara e avaliação individual de cada situação.",
+    faqSectionTitle: "Perguntas frequentes",
     faqs: [
       {
-        q: "O INSS negou meu pedido de auxílio-doença mesmo com atestado médico recomendando o repouso. O que fazer?",
-        a: "Os atestados de consultórios particulares, embora sejam extremamente necessários, não obrigam legalmente o INSS a deferir o benefício. Se ele foi negado na via administrativa, o segurado pode apresentar um recurso escrito ao próprio INSS ou levar o caso à análise judicial, onde passará por um exame físico agendado com médico perito nomeado pela Justiça."
+        q: "Preciso já saber qual benefício pedir antes de buscar orientação?",
+        a: "Não. A orientação jurídica também serve para ajudar a entender qual é a questão principal do caso e quais possibilidades precisam ser analisadas."
       },
       {
-        q: "Quais os requisitos reais para pleitear o Benefício de Prestação Continuada (BPC/LOAS)?",
-        a: "O BPC/LOAS é um amparo de assistência social pago pelo governo. Ele exige do beneficiário idoso a idade mínima de 65 anos, e da pessoa com deficiência uma limitação física ou mental de longo prazo. Além disso, a lei impõe o cadastramento atualizado no Cadastro Único (CadÚnico) e a prova de baixa renda do grupo do lar."
+        q: "Posso buscar orientação mesmo se meu benefício já tiver sido negado?",
+        a: "Sim. Situações de indeferimento podem ser analisadas com base nos documentos, no histórico previdenciário e nas circunstâncias do caso."
       },
       {
-        q: "O que é o planejamento de aposentadoria e qual a sua finalidade prática?",
-        a: "O planejamento é uma simulação matemática que cruza todas as suas contribuições antigas com as novas regras criadas em 2019. Ele previne que você peça seu benefício antes da hora ou em regras menos favoráveis, evitando perdas de renda definitivas por toda a sua vida."
+        q: "Quem tem dúvida sobre tempo de contribuição pode buscar atendimento?",
+        a: "Sim. Dúvidas sobre vínculos, contribuições e tempo de serviço fazem parte das situações que podem exigir análise previdenciária."
       },
       {
-        q: "Existe um prazo máximo para que o INSS decida sobre concessões de benefícios?",
-        a: "Sim. A legislação regulamentar prevê prazos formais para resposta dos pedidos, variando entre 45 e 90 dias úteis dependendo da modalidade. Havendo atrasos excessivos e que não possuam qualquer justificativa razoável, é pertinente utilizar medidas formais contra a demora."
+        q: "O atendimento previdenciário é individual?",
+        a: "Sim. Cada situação é analisada de forma individual, considerando documentos, histórico e necessidades específicas."
       },
       {
-        q: "É possível realizar essa análise do meu caso inteiramente pela internet?",
-        a: "Perfeitamente. O estudo de dados, a entrega de documentos e as orientações iniciais sobre as regras do INSS podem ser realizados de forma 100% digital e prática, garantindo absoluto segredo profissional."
+        q: "O primeiro contato já serve para entender melhor o caso?",
+        a: "Sim. O contato inicial ajuda a organizar as informações e permite uma compreensão mais clara sobre a situação apresentada."
       }
     ],
     formSubjects: [
-      "Planejamento e Simulação de Aposentadoria",
-      "Análise de Benefício Negado pelo INSS",
-      "Orientações sobre BPC / LOAS",
-      "Correção de Erros no Extrato CNIS",
-      "Tempo de Trabalho Especial ou Especializado",
-      "Dúvidas sobre Auxílio por Incapacidade",
-      "Dúvidas Gerais de Direito Previdenciário"
+      "Aposentadoria e Regras Aplicáveis",
+      "Planejamento Previdenciário",
+      "Benefício por Incapacidade",
+      "BPC/LOAS",
+      "Benefício Negado (Indeferimento)",
+      "Suspensão ou Cessação de Benefício",
+      "Revisão de Benefício",
+      "Acerto de Vínculos / CNIS",
+      "Outro Assunto Previdenciário"
     ],
-    defaultSubject: "Planejamento e Simulação de Aposentadoria"
+    defaultSubject: "Aposentadoria e Regras Aplicáveis",
+    finalCtaTitle: "Se você precisa entender melhor sua situação previdenciária, o primeiro passo é uma análise cuidadosa do caso.",
+    finalCtaText: "",
+    finalCtaButtonText: "Falar com o escritório",
+    formSupportText: "Preencha os dados abaixo e descreva brevemente sua situação. As informações enviadas serão analisadas com atenção, e o retorno será feito pelos canais informados."
   },
   civel: {
     tagline: "Direito Cível",
     heroBadge: "RELAÇÕES CIVIS E CONTRATOS",
-    heroHeadline: "Precisa de orientação clara sobre contratos, cobranças ou divisão consensual de bens? Esclareça sua situação de forma simples e humana.",
-    heroDescription: "Evite conflitos contratuais e desgastes pessoais. Encontre suporte atencioso para compreender termos de compra e venda de imóveis, partilhas consensuais de bens diretamente em cartório ou notificações extrajudiciais de forma pacífica e segura.",
-    resolutionDescription: "O Direito Cível organiza as obrigações fundamentais das relações privadas e familiares. Atuamos de forma atenta e individualizada para ajudar você a mediar conflitos materiais, resolver pendências contratuais, redigir acordos sob medida e providenciar inventários em cartório de forma amigável, transparente e mantendo o perfeito equilíbrio entre as partes.",
-    situationsTitle: "Situações do cotidiano cível e relações de consumo em que podemos ajudar",
+    heroHeadline: "Orientação jurídica em Direito Cível com clareza e atendimento individualizado",
+    heroDescription: "Questões envolvendo contratos, cobranças, responsabilidade civil, relações de consumo, notificações, imóveis e conflitos patrimoniais exigem análise cuidadosa. O atendimento jurídico ajuda a compreender o caso com mais segurança e clareza.",
+    heroHeadlineLP: "Está com dúvidas sobre contrato, cobrança, imóvel ou outra questão cível?",
+    heroDescriptionLP: "Situações cíveis exigem análise individual e compreensão clara do contexto. Receba orientação jurídica com atendimento responsável e comunicação objetiva.",
+    ctaPrincipalText: "Solicitar análise do caso",
+    ctaSecundarioText: "Conversar pelo WhatsApp",
+    resolutionDescription: "Demandas cíveis fazem parte do dia a dia de muitas pessoas e empresas. Nem sempre é simples entender quando uma situação exige orientação jurídica, quais documentos são importantes ou qual caminho pode ser avaliado com mais segurança. O atendimento começa com escuta, análise do contexto e verificação das informações disponíveis.",
+    situationsTitle: "Situações cíveis que podem ser analisadas",
     situations: [
-      "Dúvidas persistentes sobre deveres, multas e garantias previstos em contratos de prestação de serviços",
-      "Inseguranças em cláusulas contratuais na realização de compra ou venda de terrenos e imóveis",
-      "Pendência de valores em atraso para recebimento (como contratos descumpridos, notas promissórias ou cheques)",
-      "Cobranças de taxas abusivas ou indevidas e falhas graves de atendimento em compras de grande valor",
-      "Inclusão indevida ou sem aviso prévio do seu CPF em cadastros de proteção ao crédito (SPC ou Serasa)",
-      "Necessidade de realizar o inventário consensual ou partilha amigável de bens da família diretamente em cartório",
-      "Necessidade de redigir um contrato personalizado para resguardar adequadamente um acordo do dia a dia",
-      "Envio de notificações formais (notificação extrajudicial) para constituir mora ou buscar soluções amigáveis",
-      "Desentendimentos sobre obrigações civis privadas, conflitos de vizinhança ou necessidade de reparação por danos"
+      "Dúvidas sobre contratos e descumprimento de obrigações",
+      "Cobranças indevidas ou conflitos relacionados a dívidas",
+      "Questões de responsabilidade civil",
+      "Problemas em relações de consumo",
+      "Compra e venda de imóveis",
+      "Notificações extrajudiciais",
+      "Conflitos patrimoniais",
+      "Outras situações cíveis compatíveis com a atuação do escritório"
     ],
-    forWhomDescription: "Esta orientação jurídica informativa destina-se a pessoas, profissionais autônomos e famílias que buscam segurança em negociações materiais, termos contratuais e transições amigáveis de bens.",
-    forWhomItems: [
-      "Quem realiza a compra de imóveis e deseja avaliar os riscos contratuais envolvidos antes de assinar.",
-      "Membros de famílias que se encontram em pleno consenso e querem realizar o inventário em cartório.",
-      "Consumidores afetados por cobranças abusivas de empresas prestadoras de serviço ou negativações sem aviso.",
-      "Credores de títulos que preferem regularizar o recebimento de valores em atraso de forma respeitosa."
-    ],
-    notForWhomDescription: "Nossa atuação consultiva nesta área é estritamente voltada a contratos civis, inventários consensuais e obrigações privadas cotidianas. Não atuamos em divórcios litigiosos destrutivos, disputas graves de guarda na Vara de Família ou na vertente de Direito Penal e Criminal.",
-    howWeHelpTitle: "Como o escritório auxilia nas suas relações civis",
-    howWeHelpSubtitle: "Buscamos avaliar o seu problema com foco em soluções práticas, prevenindo longas batalhas judiciais de forma sustentável para o seu patrimônio.",
-    howWeHelp: [
-      {
-        title: "Varredura de Cláusulas",
-        desc: "Examinamos com atenção os termos de propostas e contratos para apontar multas excessivas ou obrigações injustas."
-      },
-      {
-        title: "Soluções Extrajudiciais",
-        desc: "Instruímos no envio de notificações e formulação de recibos para resolver passivos e cobranças de forma pacífica."
-      },
-      {
-        title: "Relações de Consumo",
-        desc: "Esclarecemos sobre os prazos de cancelamento, direito a garantias e providências contra cobranças de má-fé."
-      },
-      {
-        title: "Inventários em Cartório",
-        desc: "Preparamos toda a organização dos papéis para que a partilha amigável ocorra perante o cartório com agilidade."
-      }
-    ],
-    timelineTitle: "Etapas do atendimento consultivo",
-    timelineDescription: "Seguimos procedimentos de absoluto sigilo e ética profissional para orientar o seu caso com total respeito às suas particularidades.",
+    forWhomTitle: "Para quem esta página é indicada",
+    forWhomDescription: "Esta página é indicada para pessoas que desejam compreender melhor uma situação cível antes de tomar decisão. Também é útil para quem já recebeu documentos, notificações, cobranças ou enfrenta conflitos contratuais e patrimoniais que exigem orientação mais clara.",
+    forWhomItems: [],
+    notForWhomTitle: "Quando a orientação jurídica pode ser importante",
+    notForWhomDescription: "A orientação jurídica pode ser importante quando há dúvidas sobre contratos, cobranças, danos, relações de consumo, conflitos envolvendo patrimônio, notificações extrajudiciais ou outras situações em que seja necessário avaliar direitos, deveres e possibilidades de encaminhamento.",
+    howWeHelpTitle: "Como o atendimento é conduzido",
+    howWeHelpSubtitle: "Cada situação cível exige análise individual. O atendimento parte da escuta do relato, da verificação dos documentos disponíveis e da avaliação jurídica do caso concreto. A partir disso, o escritório orienta sobre os caminhos que podem ser considerados, sempre com clareza, responsabilidade e atenção ao contexto apresentado.",
+    howWeHelp: [],
+    timelineTitle: "Como funciona o atendimento",
+    timelineDescription: "",
     timelineSteps: [
       {
-        title: "Agendamento Inicial",
-        desc: "Você inicia o contato por e-mail ou mandando mensagem rápida em nosso número de WhatsApp de forma protegida."
+        title: "Entendimento inicial da situação apresentada",
+        desc: ""
       },
       {
-        title: "Apresentação do Problema",
-        desc: "Você nos descreve como foi firmado o acerto, se há documentos escritos assinados ou conversas guardadas."
+        title: "Análise dos documentos e informações disponíveis",
+        desc: ""
       },
       {
-        title: "Verificação Legal",
-        desc: "Estudamos o contrato apresentado para verificar como as leis civis e de consumo tratam a sua situação específica."
+        title: "Avaliação jurídica do caso",
+        desc: ""
       },
       {
-        title: "Orientações e Passos",
-        desc: "Explicamos de forma direta se o melhor caminho envolve termos amigáveis, notificação extrajudicial ou acertos de quitação."
+        title: "Esclarecimento das dúvidas principais",
+        desc: ""
+      },
+      {
+        title: "Orientação sobre os próximos passos, quando cabível",
+        desc: ""
       }
     ],
-    faqSectionTitle: "Dúvidas frequentes sobre contratos, acordos e bens",
+    trustBlockTitle: "Atendimento com seriedade, clareza e atenção ao caso concreto",
+    trustBlockText: "Em questões cíveis, a forma como o problema é compreendido faz diferença no encaminhamento adequado do caso. Por isso, o atendimento é conduzido com análise cuidadosa, comunicação clara e consideração das particularidades de cada situação.",
+    faqSectionTitle: "Perguntas frequentes",
     faqs: [
       {
-        q: "Quais os requisitos reais para realizar um inventário de bens diretamente em cartório?",
-        a: "Para viabilizar o inventários extrajudicial diretamente em tabelionato de notas, é exigido por lei que todos os herdeiros sejam maiores, plenamente capazes e estejam em completo consenso sobre a divisão amigável dos bens. Não deve haver testamento ativo, e a representação de advogado(a) é obrigatória por lei."
+        q: "Quando vale a pena buscar orientação jurídica em uma questão cível?",
+        a: "Sempre que houver dúvida relevante sobre direitos, deveres, documentos, contratos, cobranças ou consequências jurídicas de uma situação concreta, a orientação pode ajudar a avaliar o caso com mais clareza."
       },
       {
-        q: "Meu nome foi incluído incorretamente em cadastros de restrição ao crédito. O que posso fazer?",
-        a: "A inclusão indevida nos cadastros do SPC/Serasa, motivada por faturas pagas, erro de portabilidade ou falta de aviso antecipado, constitui prática passível de remoção do registro restritivo e eventual pedido de indenização civil por danos morais."
+        q: "Preciso estar com toda a documentação em mãos para buscar atendimento?",
+        a: "Não necessariamente. Os documentos ajudam na análise, mas o primeiro contato também serve para entender o contexto e identificar o que será importante reunir."
       },
       {
-        q: "Por que não é recomendado assinar acordos e contratos usando apenas modelos prontos de internet?",
-        a: "Os modelos genéricos baixados na internet omitem cláusulas de segurança vitais, utilizam artigos de lei defasados ou revogados e não tratam dos riscos pontuais do seu negócio real. Um contrato personalizado delimita com clareza os limites e deveres, evitando discussões penosas."
+        q: "Questões contratuais podem ser analisadas pelo escritório?",
+        a: "Sim, desde que estejam dentro do escopo de atuação da página e possam ser avaliadas a partir das informações e documentos apresentados."
       },
       {
-        q: "Como a notificação extrajudicial ajuda a resolver um descumprimento de acordo sem envolver o juiz?",
-        a: "A notificação extrajudicial é um documento oficial enviado por escrito ao devedor. Ela formaliza a existência da pendência financeira de forma indiscutível, concede um prazo razoável para acerto amigável e indica as consequências do não pagamento, possuindo altíssima eficácia na composição de acordos de forma barata e rápida."
+        q: "O atendimento é feito de forma individual?",
+        a: "Sim. Cada situação é analisada de forma individual, considerando contexto, documentos e necessidades específicas."
       },
       {
-        q: "A avaliação de riscos de um contrato de compra e venda imobiliária pode ser feita de forma remota?",
-        a: "Com certeza. Através de canais digitais e com total segurança, você pode encaminhar imagens nítidas das folhas do seu contrato para que analisemos suas cláusulas sob reserva profissional antes de você efetuar sua assinatura."
+        q: "Posso usar o primeiro contato para entender se meu caso se encaixa na área cível?",
+        a: "Sim. O contato inicial também serve para esclarecer se a situação apresentada está dentro da área de atuação indicada na página."
       }
     ],
     formSubjects: [
-      "Inventário Consensual / Cartório",
-      "Análise e Elaboração de Contratos",
-      "Cobrança e Recebimento de Valores",
-      "Problemas de Consumo e Negativação",
-      "Contratos de Compra e Venda de Imóveis",
-      "Notificação Extrajudicial / Outro Assunto"
+      "Contratos e Obrigações",
+      "Cobranças e Dívidas",
+      "Responsabilidade Civil",
+      "Relações de Consumo",
+      "Compra e Venda de Imóveis",
+      "Notificações Extrajudiciais",
+      "Conflitos Patrimoniais",
+      "Outro Assunto Cível"
     ],
-    defaultSubject: "Análise e Elaboração de Contratos"
+    defaultSubject: "Contratos e Obrigações",
+    finalCtaTitle: "Se você precisa compreender melhor uma situação cível, o primeiro passo é uma análise clara do caso.",
+    finalCtaText: "",
+    finalCtaButtonText: "Falar com o escritório",
+    formSupportText: "Preencha os dados abaixo e descreva brevemente sua situação. O contato será analisado com atenção, e o retorno será feito pelos canais informados."
   }
 };
 
@@ -482,14 +480,29 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-light text-lux-text-primary leading-[1.12] tracking-tight max-w-4xl mx-auto">
-            {copy.heroHeadline.split('?')[0]}? <br />
-            <span className="title-serif italic font-medium text-gold-brand">
-              {copy.heroHeadline.split('?')[1] || ""}
-            </span>
+            {(() => {
+              const headline = (landingPageMode && copy.heroHeadlineLP) ? copy.heroHeadlineLP : copy.heroHeadline;
+              if (headline.includes('?')) {
+                const parts = headline.split('?');
+                return (
+                  <>
+                    {parts[0]}? <br />
+                    <span className="title-serif italic font-medium text-gold-brand">
+                      {parts[1] || ""}
+                    </span>
+                  </>
+                );
+              }
+              return (
+                <span className="font-light">
+                  {headline}
+                </span>
+              );
+            })()}
           </h1>
 
           <p className="text-sm sm:text-base md:text-lg text-lux-text-secondary leading-relaxed font-light max-w-3xl mx-auto">
-            {copy.heroDescription}
+            {(landingPageMode && copy.heroDescriptionLP) ? copy.heroDescriptionLP : copy.heroDescription}
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 max-w-md mx-auto sm:max-w-none">
@@ -498,13 +511,13 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
               className="w-full sm:w-auto px-8 py-4 rounded-full text-xs font-semibold uppercase tracking-widest bg-emerald-500 hover:bg-emerald-400 text-white transition-all shadow-xl shadow-emerald-500/10 flex items-center justify-center space-x-2.5 cursor-pointer hover:scale-102"
             >
               <MessageSquare className="w-4.5 h-4.5 text-white" />
-              <span>Conversar pelo WhatsApp</span>
+              <span>{copy.ctaSecundarioText || "Conversar pelo WhatsApp"}</span>
             </button>
             <button
               onClick={() => document.querySelector('#procedimento-contato-especifico')?.scrollIntoView({ behavior: 'smooth' })}
               className="w-full sm:w-auto px-8 py-4 rounded-full text-xs font-semibold uppercase tracking-widest border border-lux-border-bright text-lux-text-primary bg-lux-panel hover:bg-lux-panel-light cursor-pointer transition-all text-center"
             >
-              Solicitar Atendimento por E-mail
+              {copy.ctaPrincipalText || "Solicitar Atendimento por E-mail"}
             </button>
           </div>
 
@@ -587,32 +600,36 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
             <div className="lg:col-span-7 space-y-6">
               <span className="text-[10px] uppercase tracking-widest font-bold text-gold-brand block">PÚBLICO-ALVO</span>
               <h2 className="text-2xl md:text-3xl font-light text-lux-text-primary tracking-tight">
-                Para quem esta página pode ser útil
+                {copy.forWhomTitle || "Para quem esta página pode ser útil"}
               </h2>
               <div className="h-0.5 w-12 bg-gold-brand" />
               <p className="text-sm md:text-base text-lux-text-secondary leading-relaxed font-light">
                 {copy.forWhomDescription}
               </p>
 
-              <div className="space-y-4 pt-4">
-                {copy.forWhomItems.map((item, idx) => (
-                  <div key={idx} className="flex items-start space-x-3">
-                    <div className="w-5.5 h-5.5 rounded-full bg-gold-brand/10 border border-gold-brand/20 flex items-center justify-center shrink-0 mt-0.5">
-                      <CheckCircle className="w-3 h-3 text-gold-brand" />
+              {copy.forWhomItems && copy.forWhomItems.length > 0 && (
+                <div className="space-y-4 pt-4">
+                  {copy.forWhomItems.map((item, idx) => (
+                    <div key={idx} className="flex items-start space-x-3">
+                      <div className="w-5.5 h-5.5 rounded-full bg-gold-brand/10 border border-gold-brand/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <CheckCircle className="w-3 h-3 text-gold-brand" />
+                      </div>
+                      <p className="text-xs md:text-sm text-lux-text-primary font-light leading-relaxed">{item}</p>
                     </div>
-                    <p className="text-xs md:text-sm text-lux-text-primary font-light leading-relaxed">{item}</p>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* Unsuitable scenario disclaimer (Para quem NÃO serve as a boundary) */}
             <div className="lg:col-span-5 bg-lux-bg border border-lux-border/60 p-6 md:p-8 rounded-2xl relative overflow-hidden self-stretch flex flex-col justify-between">
               <div className="absolute top-0 right-0 w-32 h-32 bg-gold-brand/[0.015] rounded-full blur-2xl pointer-events-none" />
               <div className="space-y-5">
-                <span className="text-[10px] uppercase tracking-widest font-bold text-lux-text-muted block">RESTRIÇÃO DE FOCO</span>
+                <span className="text-[10px] uppercase tracking-widest font-bold text-lux-text-muted block">
+                  {copy.notForWhomTitle?.includes("importante") ? "DIREITOS" : "RESTRIÇÃO DE FOCO"}
+                </span>
                 <h3 className="text-lg md:text-xl font-light text-lux-text-primary tracking-tight">
-                  Quando nossa orientação não é a ideal
+                  {copy.notForWhomTitle || "Quando nossa orientação não é a ideal"}
                 </h3>
                 <div className="h-[1px] w-full bg-lux-border/40" />
                 <p className="text-xs md:text-sm text-lux-text-secondary leading-relaxed font-light">
@@ -626,7 +643,7 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
                   className="w-full py-3 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/20 rounded-full text-xs font-semibold uppercase tracking-widest flex items-center justify-center space-x-2 cursor-pointer transition-colors"
                 >
                   <MessageSquare className="w-3.5 h-3.5 text-emerald-400" />
-                  <span>FALAR COM A ADVOGADA</span>
+                  <span>{(copy.ctaSecundarioText || "Falar com a advogada").toUpperCase()}</span>
                 </button>
               </div>
             </div>
@@ -654,19 +671,21 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
             {copy.howWeHelpSubtitle}
           </p>
 
-          <div className="grid sm:grid-cols-2 gap-6 pt-2">
-            {copy.howWeHelp.map((helpItem, idx) => (
-              <div key={idx} className="p-6 rounded-xl bg-lux-panel border border-lux-border hover:border-gold-brand/20 transition-all duration-300 flex items-start space-x-4">
-                <div className="w-8 h-8 rounded-full bg-gold-brand/10 border border-gold-brand/20 flex items-center justify-center shrink-0 mt-0.5">
-                  <CheckCircle className="w-4 h-4 text-gold-brand" />
+          {copy.howWeHelp && copy.howWeHelp.length > 0 && (
+            <div className="grid sm:grid-cols-2 gap-6 pt-2">
+              {copy.howWeHelp.map((helpItem, idx) => (
+                <div key={idx} className="p-6 rounded-xl bg-lux-panel border border-lux-border hover:border-gold-brand/20 transition-all duration-300 flex items-start space-x-4">
+                  <div className="w-8 h-8 rounded-full bg-gold-brand/10 border border-gold-brand/20 flex items-center justify-center shrink-0 mt-0.5">
+                    <CheckCircle className="w-4 h-4 text-gold-brand" />
+                  </div>
+                  <div className="space-y-1.5">
+                    <h4 className="text-sm md:text-base text-lux-text-primary font-medium">{helpItem.title}</h4>
+                    <p className="text-xs md:text-sm text-lux-text-secondary font-light leading-relaxed">{helpItem.desc}</p>
+                  </div>
                 </div>
-                <div className="space-y-1.5">
-                  <h4 className="text-sm md:text-base text-lux-text-primary font-medium">{helpItem.title}</h4>
-                  <p className="text-xs md:text-sm text-lux-text-secondary font-light leading-relaxed">{helpItem.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
@@ -685,9 +704,11 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
             <div className="h-0.5 w-12 bg-gold-brand mx-auto" />
           </div>
 
-          <p className="text-sm md:text-base text-lux-text-secondary leading-relaxed font-light text-center max-w-3xl mx-auto mb-12">
-            {copy.timelineDescription}
-          </p>
+          {copy.timelineDescription && (
+            <p className="text-sm md:text-base text-lux-text-secondary leading-relaxed font-light text-center max-w-3xl mx-auto mb-12">
+              {copy.timelineDescription}
+            </p>
+          )}
 
           <div className="space-y-8 relative pl-2 max-w-2xl mx-auto">
             {copy.timelineSteps.map((step, idx) => (
@@ -697,7 +718,9 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
                 </div>
                 <div className="space-y-1">
                   <h4 className="text-sm md:text-base text-lux-text-primary font-medium">{step.title}</h4>
-                  <p className="text-xs md:text-sm text-lux-text-secondary font-light leading-relaxed">{step.desc}</p>
+                  {step.desc && (
+                    <p className="text-xs md:text-sm text-lux-text-secondary font-light leading-relaxed">{step.desc}</p>
+                  )}
                 </div>
               </div>
             ))}
@@ -796,11 +819,11 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
           <span className="text-[10px] uppercase tracking-widest font-bold text-lux-text-muted block">REFLEXO DE VALORES</span>
           <div className="max-w-2xl mx-auto space-y-4">
             <h3 className="title-serif text-xl md:text-2xl font-light text-lux-text-primary tracking-tight">
-              Estrutura de Apoio e Confiança
+              {copy.trustBlockTitle || "Estrutura de Apoio e Confiança"}
             </h3>
             <div className="h-0.5 w-8 bg-gold-brand/60 mx-auto" />
             <p className="text-sm md:text-base text-lux-text-secondary font-light leading-relaxed italic px-4">
-              “O escritório atua com atendimento jurídico cuidadoso, comunicação clara e análise individual das situações apresentadas, oferecendo orientação com responsabilidade e seriedade.”
+              “{copy.trustBlockText || "O escritório atua com atendimento jurídico cuidadoso, comunicação clara e análise individual das situações apresentadas, oferecendo orientação com responsabilidade e seriedade."}”
             </p>
           </div>
           <div className="h-[1px] w-16 bg-lux-border/60 mx-auto" />
@@ -867,11 +890,13 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
                 ATENDIMENTO RESPONSÁVEL
               </span>
               <h3 className="title-serif text-2xl md:text-3xl lg:text-4xl font-light leading-snug font-sans">
-                Fale com a Dra. Fernanda Parentoni Avancini
+                {copy.finalCtaTitle || "Fale com a Dra. Fernanda Parentoni Avancini"}
               </h3>
-              <p className="text-xs md:text-sm text-lux-text-secondary font-light leading-relaxed">
-                Se você está enfrentando uma situação em que necessita de esclarecimento ou deseja dar andamento aos seus direitos, apresente seu caso. O contato preliminar é seguro, restrito e amparado legalmente.
-              </p>
+              {copy.finalCtaText && (
+                <p className="text-xs md:text-sm text-lux-text-secondary font-light leading-relaxed">
+                  {copy.finalCtaText}
+                </p>
+              )}
 
               <div className="flex flex-col space-y-3 pt-2">
                 <button
@@ -879,7 +904,7 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
                   className="w-full py-3.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-semibold uppercase tracking-widest flex items-center justify-center space-x-2 cursor-pointer shadow-md"
                 >
                   <MessageSquare className="w-4.5 h-4.5 text-white" />
-                  <span>FALAR PELO WHATSAPP</span>
+                  <span>{copy.finalCtaButtonText || "FALAR PELO WHATSAPP"}</span>
                 </button>
               </div>
 
@@ -890,9 +915,14 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
             </div>
 
             <div className="md:col-span-7 bg-lux-bg border border-lux-border p-6 md:p-8 rounded-2xl shadow-xl">
-              <h4 className="title-serif text-xl font-light text-lux-text-primary mb-5">
+              <h4 className="title-serif text-xl font-light text-lux-text-primary mb-2">
                 Solicite contato sobre {copy.tagline}
               </h4>
+              {copy.formSupportText && (
+                <p className="text-xs text-lux-text-secondary font-light mb-5">
+                  {copy.formSupportText}
+                </p>
+              )}
 
               {isSuccess && (
                 <div className="p-3.5 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs rounded-xl mb-4 animate-fade-in">
