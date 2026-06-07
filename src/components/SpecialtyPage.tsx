@@ -447,13 +447,6 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
               <span className="text-[10px] text-lux-text-muted font-light hidden sm:block">
                 Área de Atuação: <strong className="text-lux-text-primary font-medium">{copy.tagline}</strong>
               </span>
-              <button 
-                onClick={onToggleMode}
-                className="px-2.5 py-1 rounded border border-lux-border hover:bg-lux-bg text-[9px] text-gold-brand uppercase font-bold tracking-wider transition-colors duration-200"
-                title="Visualizar como landing page de alta conversão"
-              >
-                Visualizar Como LP
-              </button>
             </div>
           </div>
         </div>
