@@ -18,26 +18,50 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
     
     setIsSubmitting(true);
     
-    // Simulate premium backend submit delay
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSuccess(true);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: ''
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: 'SUA_ACCESS_KEY_DO_WEB3FORMS',
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          subject: formData.subject || 'Contato via site – Dra. Fernanda',
+          message: formData.message
+        })
       });
-      // Hide success banner after 5s
-      setTimeout(() => setIsSuccess(false), 5000);
-    }, 1200);
+
+      const result = await response.json();
+      
+      if (response.ok && result.success) {
+        setIsSuccess(true);
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: ''
+        });
+        // Hide success banner after 5s
+        setTimeout(() => setIsSuccess(false), 5000);
+      } else {
+        console.error('Erro ao enviar formulário via Web3Forms:', result.message || 'Erro desconhecido');
+      }
+    } catch (err) {
+      console.error('Erro de rede ao enviar para Web3Forms:', err);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleWhatsappClick = () => {
@@ -66,7 +90,7 @@ export default function Contact() {
             </div>
 
             <p className="text-lux-text-secondary font-light leading-relaxed text-sm md:text-base">
-              Estamos à disposição para entender o seu caso e orientar você com clareza e responsabilidade. Preencha o formulário para solicitar contato ou, se preferir, fale diretamente pelo WhatsApp.
+              Estamos à disposição para entender o seu caso e orientar com clareza e responsabilidade. Preencha o formulário para solicitar contato ou, se preferir, fale diretamente pelo WhatsApp.
             </p>
 
             {/* Visual cards with office credentials */}
@@ -78,7 +102,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="text-[10px] uppercase font-bold tracking-wider text-lux-text-muted">WHATSAPP / TELEFONE</div>
-                  <span className="text-sm font-semibold text-lux-text-primary">(19) 3813-3837</span>
+                  <span className="text-sm font-semibold text-lux-text-primary">+55 (19) 98211-1193</span>
                 </div>
               </div>
 

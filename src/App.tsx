@@ -14,6 +14,7 @@ import Articles from './components/Articles';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import SpecialtyPage from './components/SpecialtyPage';
+import FloatingWhatsapp from './components/FloatingWhatsapp';
 import { motion, AnimatePresence } from 'motion/react';
 
 export default function App() {
@@ -128,11 +129,11 @@ export default function App() {
                 portraitImage={portraitUrl}
               />
               
-              <About portraitImage={portraitUrl} />
-              
               <Specialties onSelectSpecialty={(id) => navigateTo(id, false)} />
               
               <Differences />
+              
+              <About portraitImage={portraitUrl} />
               
               <Articles />
               
@@ -167,6 +168,8 @@ export default function App() {
       {(!isLpMode || isHome) && (
         <Footer currentPage={currentPage} navigateTo={navigateTo} />
       )}
+
+      {!isLpMode && <FloatingWhatsapp />}
 
     </div>
   );

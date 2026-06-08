@@ -115,7 +115,7 @@ export default function Specialties({ onSelectSpecialty }: SpecialtiesProps) {
                   <div
                     className="text-xs uppercase tracking-widest font-semibold text-gold-brand group-hover:text-gold-light transition-all duration-200 flex items-center space-x-2"
                   >
-                    <span>CONHECER ESPECIALIDADE</span>
+                    <span>VER ATENDIMENTO</span>
                     <ArrowUpRight className="w-4 h-4 text-gold-brand group-hover:text-gold-light group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
                   </div>
                 </div>

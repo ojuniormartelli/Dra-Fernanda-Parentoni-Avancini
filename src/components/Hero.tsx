@@ -70,7 +70,7 @@ export default function Hero({ onOpenConsultation, onExploreSpecialties, bgImage
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-3.5xl sm:text-4.5xl md:text-5xl lg:text-5.5xl font-light leading-[1.18] text-lux-text-primary tracking-tight"
           >
-            Atuação jurídica com <span className="title-serif italic font-medium text-gold-brand">seriedade, clareza</span> e atenção ao seu caso.
+            Orientação jurídica clara em <span className="title-serif italic font-medium text-gold-brand">Direito Trabalhista, Previdenciário e Cível</span>.
           </motion.h1>
 
           {/* Core Subtitle */}
@@ -80,7 +80,7 @@ export default function Hero({ onOpenConsultation, onExploreSpecialties, bgImage
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-sm sm:text-base lg:text-lg text-lux-text-secondary leading-relaxed font-light text-balance"
           >
-            A Dra. Fernanda Parentoni Avancini oferece atendimento nas áreas Trabalhista, Previdenciária e Cível, com foco em orientação segura, comunicação clara e acompanhamento próximo.
+            A Dra. Fernanda Parentoni Avancini oferece atendimento individualizado para quem precisa entender melhor sua situação, organizar os próximos passos e receber orientação com seriedade nas áreas Trabalhista, Previdenciária e Cível.
           </motion.p>
 
           {/* Clean and Resilient CTA Pack */}
@@ -95,7 +95,7 @@ export default function Hero({ onOpenConsultation, onExploreSpecialties, bgImage
               onClick={onOpenConsultation}
               className="w-full sm:w-auto px-8 py-4 rounded-full text-xs font-semibold uppercase tracking-wider bg-gradient-to-r from-gold-dark to-gold-brand hover:from-gold-brand hover:to-gold-light text-lux-bg transition-all duration-300 shadow-md shadow-gold-brand/10 hover:shadow-gold-brand/20 active:scale-97 cursor-pointer flex items-center justify-center space-x-2.5"
             >
-              <span>AGENDAR CONSULTA</span>
+              <span>AGENDAR ATENDIMENTO</span>
               <ArrowRight className="w-4 h-4" />
             </button>
 
@@ -104,7 +104,7 @@ export default function Hero({ onOpenConsultation, onExploreSpecialties, bgImage
               onClick={onExploreSpecialties}
               className="w-full sm:w-auto px-8 py-4 rounded-full text-xs font-semibold uppercase tracking-wider border border-lux-border-bright hover:border-gold-brand/80 text-lux-text-primary bg-lux-panel/30 hover:bg-lux-panel/75 transition-all duration-300 active:scale-97 cursor-pointer text-center"
             >
-              CONHECER ÁREAS DE ATUAÇÃO
+              VER ÁREAS DE ATUAÇÃO
             </button>
           </motion.div>
 
