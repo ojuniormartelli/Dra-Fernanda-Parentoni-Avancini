@@ -4,7 +4,7 @@
  */
 
 import { useState, useEffect, FormEvent } from 'react';
-import { ArrowLeft, MessageSquare, ChevronDown, ChevronUp, CheckCircle, ShieldCheck, HelpCircle, Scale, ArrowRight } from 'lucide-react';
+import { ArrowLeft, MessageSquare, ChevronDown, ChevronUp, CheckCircle, ShieldCheck, HelpCircle, Scale, ArrowRight, AlertCircle, Loader2 } from 'lucide-react';
 import { PageId } from '../types';
 
 interface SpecialtyPageProps {
@@ -356,6 +356,7 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
   const [message, setMessage] = useState('');
   const [isSuccess, setIsSuccess] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   // Sync default subject when loaded area changes
   useEffect(() => {
@@ -368,20 +369,55 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
     window.scrollTo({ top: 0, behavior: 'instant' as any });
   }, [specialtyId]);
 
-  const handleLocalSubmit = (e: FormEvent) => {
+  const handleLocalSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!name || !message || !phone || !email) return;
+    
     setIsSubmitting(true);
-    setTimeout(() => {
+    setIsSuccess(false);
+    setSubmitError('');
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
+          name,
+          email,
+          phone,
+          subject: subject || `Contato via site (${copy.tagline}) – Dra. Fernanda`,
+          message
+        })
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        setIsSuccess(true);
+        setName('');
+        setPhone('');
+        setEmail('');
+        setSubject(copy.defaultSubject);
+        setMessage('');
+        setTimeout(() => setIsSuccess(false), 5000);
+      } else {
+        setSubmitError(
+          'Não foi possível enviar sua mensagem agora. Tente novamente em instantes ou fale diretamente pelo WhatsApp.'
+        );
+        console.error('Erro ao enviar formulário via Web3Forms:', result.message || 'Erro desconhecido');
+      }
+    } catch (err) {
+      setSubmitError(
+        'Não foi possível enviar sua mensagem agora. Verifique sua conexão e tente novamente, ou fale diretamente pelo WhatsApp.'
+      );
+      console.error('Erro de rede ao enviar para Web3Forms:', err);
+    } finally {
       setIsSubmitting(false);
-      setIsSuccess(true);
-      setName('');
-      setPhone('');
-      setEmail('');
-      setSubject(copy.defaultSubject);
-      setMessage('');
-      setTimeout(() => setIsSuccess(false), 5000);
-    }, 1000);
+    }
   };
 
   const handleWhatsappCTA = () => {
@@ -791,8 +827,30 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
               )}
 
               {isSuccess && (
-                <div className="p-3.5 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs rounded-xl mb-4 animate-fade-in">
-                  Mensagem enviada com sucesso! Retornaremos o mais breve possível para agendar o seu atendimento.
+                <div className="p-3.5 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[11px] md:text-xs rounded-xl mb-4 animate-fade-in flex items-start gap-2.5">
+                  <CheckCircle className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                  <div>
+                    <h5 className="font-semibold text-lux-text-primary text-[10px] uppercase tracking-wider">
+                      Mensagem enviada!
+                    </h5>
+                    <p className="text-[11px] text-emerald-400/90 leading-relaxed font-light mt-0.5">
+                      Recebemos seu contato com sucesso. Retornaremos o mais breve possível para agendarmos seu atendimento.
+                    </p>
+                  </div>
+                </div>
+              )}
+
+              {submitError && (
+                <div className="p-3.5 bg-red-500/10 border border-red-500/20 text-red-400 text-[11px] md:text-xs rounded-xl mb-4 animate-fade-in flex items-start gap-2.5">
+                  <AlertCircle className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
+                  <div>
+                    <h5 className="font-semibold text-lux-text-primary text-[10px] uppercase tracking-wider">
+                      Não foi possível enviar
+                    </h5>
+                    <p className="text-[11px] text-red-400/90 leading-relaxed font-light mt-0.5">
+                      {submitError}
+                    </p>
+                  </div>
                 </div>
               )}
 
@@ -869,10 +927,19 @@ export default function SpecialtyPage({ specialtyId, landingPageMode, onBackToHo
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-3.5 rounded-xl text-xs font-semibold uppercase tracking-widest bg-gradient-to-r from-gold-dark to-gold-brand hover:from-gold-brand text-lux-bg transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer active:scale-98"
+                  className="w-full py-3.5 rounded-xl text-xs font-semibold uppercase tracking-widest bg-gradient-to-r from-gold-dark to-gold-brand hover:from-gold-brand text-lux-bg transition-all duration-300 disabled:opacity-55 disabled:cursor-not-allowed flex items-center justify-center space-x-2 cursor-pointer active:scale-98"
                 >
-                  <span>{isSubmitting ? "ENVIANDO..." : "ENVIAR SOLICITAÇÃO"}</span>
-                  <ArrowRight className="w-3.5 h-3.5 text-lux-bg" />
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin text-lux-bg" />
+                      <span>ENVIANDO...</span>
+                    </>
+                  ) : (
+                    <>
+                      <span>ENVIAR SOLICITAÇÃO</span>
+                      <ArrowRight className="w-3.5 h-3.5 text-lux-bg" />
+                    </>
+                  )}
                 </button>
               </form>
             </div>
